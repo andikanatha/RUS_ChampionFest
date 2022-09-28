@@ -4,7 +4,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-image: url("/img/Desktop\ -\ 3.png");
 }
 
 li, a, button {
@@ -49,8 +48,10 @@ button{
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-}
+}   
 
 button:hover{
-    background-color: rgba(0, 136, 169, 0.8);
+    color: #fff;
+    background: #133EFA;
+    border: 1px solid #133EFA;
 }
