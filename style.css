@@ -155,3 +155,65 @@ header {
         margin-top: -25rem;
     }
 /*  */
+
+/* kompetisi */
+.kompetesi h2{
+    font-size: 64px;
+    margin-bottom: 8rem;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both
+  }
+
+.column-66 {
+    float: left;
+    width: 66%;
+    padding: 20px;
+    padding: 1rem 5rem 5rem 20rem;
+  }
+  
+  .img-66 {
+    margin-top: 6rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .column-33 {
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
+  }
+
+  .column-33 img {
+    width: 150%;
+    height: 356px;
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 300px;
+  }
+
+  .large-font {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+  
+  .xlarge-font {
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
+  
+  .btn-daftar {
+    display: flex;
+    align-items: center;
+    color: #222222;
+    padding: 10px 5px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .btn-daftar img{
+    margin-left: 3rem;
+  }
