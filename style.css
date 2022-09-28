@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@400;500;600;700&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'KoHo', sans-serif;
 }
 
 li, a, button {
-    font-family: 'Inter', sans-serif;
+    font-family: 'KoHo', sans-serif;
     font-weight: 600;
     font-size: 1.125rem;
     color: #000;
@@ -18,11 +19,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 0 10%;
+    background-color: #fff;
+    box-shadow: 1px 5px 5px 0px rgba(0,0,0,0.30);
 }
 
 .logo {
     cursor: pointer;
+    width: 100px;
+    height: 100px;
 }
 
 .nav_links{
@@ -36,13 +41,14 @@ header {
 
 .nav_links li a{
     transition: all 0.3s ease 0s;
+    font-weight: 700;
 }
 
 .nav_links li a:hover {
     color: #133EFA;
 }
 
-button{
+.cta button{
     padding: 9px 25px;
     background-color: transparent;
     border-radius: 10px;
@@ -50,8 +56,40 @@ button{
     transition: all 0.3s ease 0s;
 }   
 
-button:hover{
+.cta button:hover{
     color: #fff;
-    background: #133EFA;
-    border: 1px solid #133EFA;
+    background: #182148;
+    border: 1px solid #182148;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    margin-top: 90px;
+    height: 100vh;
+}
+
+.hero-text {
+    position: absolute;
+    top: 80%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text {
+    color: #fff;
+    font-size: 4.2rem;
+    text-align: center;
+    align-items: center;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero .img-scroll {
+    position: absolute;
+    top: 130%;
+    left: 44%;
 }
