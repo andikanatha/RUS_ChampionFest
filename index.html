@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RUS CHAMPIONSHIP FESTIFAL</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <link rel="stylesheet" href="timiline.css">
 </head>
 <body>
     <!-------- Navbar ---------->
     <header>
-        <img class="logo" src="img/logo-rus.png" alt="logo rus">
+        <img class="logo" src="img/logo-rus-header.svg" alt="logo rus">
         <nav>
             <ul class="nav_links">
                 <li><a href="#">ABOUT</a></li>
@@ -20,7 +22,7 @@
                 <li><a href="#">CONTACT</a></li>
             </ul>
         </nav>
-        <a class="cta" href="#"><button>GUIDEBOOK <img src="img/arrow-down.png" alt=""></button></a>
+        <a class="cta" href="#"><button>GUIDEBOOK <img src="img/logo-download.png" alt=""></button></a>
     </header>
     <!--------- End Navbar --------->
 
@@ -127,10 +129,22 @@
   <!----------- End Timiline ------------->
  
     <!---------- SPONSOR ------->
-    
+    <div class="container">
+      <h2 class="text-center font-weight-bold">Our Partners</h2>
+      <section class="customer-logos slider">
+          <div class="slide"><img src="img/logo-rusanimation.svg" alt="logo"></div>
+          <div class="slide"><img src="img/logo-dicoding.svg" alt="logo"></div>
+          <div class="slide"><img src="img/logo-holyTea.svg" alt="logo"></div>
+          <div class="slide"><img src="img/logo-base.svg" alt="logo"></div>
+          <div class="slide"><img src="img/logo-rus.svg" alt="logo"></div>
+          <div class="slide"><img src="img/logo-djarum.svg" alt="logo"></div>
+      </section>
+  </div>
     <!------------ SPONSOR ------------>
   </div>
-    <!-- <footer class="footer-distributed">
+
+  <!--------- Footer -------->
+    <footer class="footer-distributed">
         <div class="footer-left">
             <h3>RUS CHAMPIONFEST 2022</h3>
 
@@ -173,7 +187,9 @@
                     <a href="#"><i class="twitter"><img src="/blog/img/icon/twitter.png" alt=""/></i></a>
             </div>
         </div>
-    </footer> -->
+    </footer>
+
+    <!--------- Footer --------->
 
     <script src="script.js"></script>
 </body>
