@@ -8,15 +8,14 @@
 }
 
 body{
-    background-image: url(./img/);
+    background-color: #1B2031;
 }
 /* header */
 
 li, a, button {
-    font-family: 'KoHo', sans-serif;
     font-weight: 600;
     font-size: 1.125rem;
-    color: #000;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -25,15 +24,13 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 10%;
-    background-color: #fff;
-    box-shadow: 1px 5px 5px 0px rgba(0,0,0,0.30);
     z-index: 1000;
 }
 
 .logo {
     cursor: pointer;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 .nav_links{
@@ -59,8 +56,16 @@ header {
     background-color: transparent;
     border-radius: 10px;
     cursor: pointer;
+    border: 1px solid #fff;
     transition: all 0.3s ease 0s;
 }   
+
+.cta img{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    padding-top: 4px;
+}
 
 .cta button:hover{
     color: #fff;
@@ -68,40 +73,35 @@ header {
     border: 1px solid #182148;
 }
 
-/* tbody */
-    .tbody{
-        margin: 0 3.75rem;
-    }
-/*  */
-
 
 /* intro */
-    .intro{
-        margin: 5rem 0;
+    .main-page{
+        margin: 20px 0;
+        padding: 70px 0;
+        background-image: url(img/bg-home.png);
+        background-size: cover;
+        background-position: center;
     }
 
     .text-intro{
+        color: #fff;
         float: right;
         font-size: 5.9375rem;
         text-align: center;
         font-weight: bold;
-        margin: 6.3rem 0;
-        text-shadow: 5px 5px 4px#15AAE6;
+        margin: 6.3rem 4rem;
+        text-shadow:
+        4px  4px 0 #c2c3ca,
+       -2px -2px 0 #000,  
+        2px -2px 0 #000,
+       -4px  4px 0 #000,
+        2px  2px 0 #000;
     }
 
-/*  */
-
-/* down */
-
-    .down{
-        display: flex;
-        justify-content: center;
+    .img-intro{
+        margin: 0 0 0 4rem;
     }
 
-    .down-img{
-        width: 10rem;
-        transform: rotate(90deg);
-    }
 /*  */
 
 /* moto */ 
