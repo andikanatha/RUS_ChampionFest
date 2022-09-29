@@ -1,37 +1,3 @@
-@font-face {
-    font-family: 'ESL Legend';
-    src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.eot);
-    src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.eot#iefix) format("embedded-opentype"),
-    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.woff2) format("woff2"),
-    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.woff) format("woff"),
-    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.ttf) format("truetype"),
-    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.svg#eicon) format("svg");
-    font-style: normal;
-    font-weight: 300;
-  }
-  @font-face {
-    font-family: 'ESL Legend';
-    src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.eot);
-    src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.eot#iefix) format("embedded-opentype"),
-    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.woff2) format("woff2"),
-    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.woff) format("woff"),
-    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.ttf) format("truetype"),
-    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.svg#eicon) format("svg");
-    font-style: normal;
-    font-weight: normal;
-  }
-  @font-face {
-    font-family: 'ESL Legend';
-    src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.eot);
-    src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.eot#iefix) format("embedded-opentype"),
-    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.woff2) format("woff2"),
-    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.woff) format("woff"),
-    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.ttf) format("truetype"),
-    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.svg#eicon) format("svg");
-    font-style: normal;
-    font-weight: bold;
-  }
-
 @import url('https://fonts.googleapis.com/css2?family=KoHo:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 * {
@@ -141,6 +107,8 @@ header {
 .about{
     text-align: center;
     background: #1b2031;
+    background-image: url(/img/Vector.svg);
+    background-size: cover;
     padding: 7rem 0;
 }
 
@@ -232,71 +200,9 @@ header {
 }
 /*  */
 
-/* kompetisi */
-.kompetesi h2{
-    font-size: 64px;
-    margin-bottom: 8rem;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both
-  }
-
-.column-66 {
-    float: left;
-    width: 66%;
-    padding: 20px;
-    padding: 1rem 5rem 5rem 20rem;
-  }
-  
-  .img-66 {
-    margin-top: 6rem;
-    width: 100%;
-    height: auto;
-  }
-
-  .column-33 {
-    float: left;
-    width: 33.33333%;
-    padding: 20px;
-  }
-
-  .column-33 img {
-    width: 150%;
-    height: 356px;
-    border-top-right-radius: 300px;
-    border-bottom-right-radius: 300px;
-  }
-
-  .large-font {
-    font-size: 22px;
-    margin-bottom: 30px;
-  }
-  
-  .xlarge-font {
-    font-size: 50px;
-    font-weight: 500;
-    margin-bottom: 40px;
-  }
-  
-  .btn-daftar {
-    display: flex;
-    align-items: center;
-    color: #222222;
-    padding: 10px 5px;
-    font-size: 20px;
-    cursor: pointer;
-  }
-
-  .btn-daftar img{
-    margin-left: 3rem;
-  }
-
-  /* timeline */
-  
-  /*  */
+/* Sponsor */
+    
+/*  */
 
 /* footer */
 
