@@ -104,56 +104,99 @@ header {
 
 /*  */
 
-/* moto */ 
-    .moto{
-        display: flex;
-        justify-content: center;
-        margin: 20rem 0;
-    }
+/* TENTANG */
+.about{
+    text-align: center;
+    background: #1b2031;
+    padding: 7rem 0;
+}
 
-    .text-moto{
-        font-size: 5.3125rem;
-        font-weight: bold;
-    }
+.tittle-about{
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.img-about{
+    width: 352px;
+    height: 346px;
+    margin: 0 auto;
+}
+
+.desc-about{
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    padding: 0 21rem;
+}
+
 /*  */
 
-/* tentang */
-    .tentang{
-        margin: 15rem 8.5rem;
-    }
-    .img-tentang{
-        background: #F1B170;
-        width: 27.25rem;
-        border: solid 5px #000;
-        border-radius: 30px;
-        z-index: 2
-    }
+/* DAFTAR */
+.daftar{
+    text-align: center;
+    background-image: url(img/bg-daftar.png);
+    background-size: cover;
+    padding: 7rem 0;
+    color: #fff;
+}
 
-    .tittle-tentang{
-       font-size: 50px;
-       margin-bottom: 1.5rem;
-    }
+.tittle-daftar{
+    font-size: 85px;
+}
 
-    .sub-tentang{
-        font-size: 24px;
-        margin-bottom: 0.8rem;
-    }
+.sub-daftar{
+    font-size: 50px;
+    padding-top: 79px;
+}
 
-    .text-tentang{
-        font-size: 20px;
-    }
+.text-daftar{
+    font-size: 20px;
+    padding: 0 18.5rem;
+    padding-top: 22px;
+}
 
-    .card-tentang{
-        float: right;
-        background: #2F5770;
-        border: solid 5px #000;
-        border-radius: 30px;
-        color: #fff;
-        padding: 3rem 7rem 6rem 24rem;
-        z-index: 1;
-        width: 59.4375rem;
-        margin-top: -25rem;
-    }
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 84px;
+
+}
+
+.btn-register{
+    border-radius: 5%;
+    border: 1px solid #fff;
+    padding: 20px 30px  ;
+    background-color: transparent;
+    margin-right: 4rem;
+    color: #fff;
+}
+
+.btn-register:hover{
+    background-color: #fff;
+    color: #1b2031;
+}
+
+.btn-guide{
+    border-radius: 5%;
+    border: 1px solid #fff;
+    padding: 20px 30px;
+    background-color: transparent;
+    margin-left: 4rem;
+    color: #fff;
+}
+
+.btn-guide:hover{
+    background-color: #fff;
+    color: #1b2031;
+}
+
+.icon-daftar{
+    width: 200px;
+    height: 62px;
+    margin-top: 134px;
+}
 /*  */
 
 /* kompetisi */
