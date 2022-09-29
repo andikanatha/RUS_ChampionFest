@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RUS CHAMPIONSHIP FESTIFAL</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="timiline.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
 </head>
 <body>
     <!-------- Navbar ---------->
@@ -13,37 +17,39 @@
         <img class="logo" src="img/images 1.svg" alt="logo rus">
         <nav>
             <ul class="nav_links">
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">EVENT</a></li>
-                <li><a href="#">TIMELINE</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a class="hover-underline-animation" href="#">ABOUT</a></li>
+                <li><a class="hover-underline-animation" href="#">EVENT</a></li>
+                <li><a class="hover-underline-animation" href="#">TIMELINE</a></li>
+                <li><a class="hover-underline-animation" href="#">CONTACT</a></li>
             </ul>
         </nav>
-        <a class="cta" href="#"><button>REGISTER</button></a>
+        <div class="register">
+            <a class="btn" href="#">REGISTER</a>
+        </div>
     </header>
     <!--------- End Navbar --------->
 
     <!-------- Main Page ------->
-    <div class="tbody">
-        <div class="intro">
+<div class="tbody">
+        <!-- <div class="intro">
             <img src="./img/Logo-removebg-preview 2.png" alt="" class="img-intro">
             <p class="text-intro">RUS<br>CHAMPIONFEST<br>2022</p>
         </div>
         <div class="down">
             <img src="./img/fast-forward-unscreen.gif" alt="" class="down-img">
-        </div>
+        </div> -->
     <!------- End Main Page ------->
 
     <!-------- Moto ---------->
-        <div class="moto">
+        <!-- <div class="moto">
             <h1 class="text-moto">
                 “Join as five and battle as one!”
             </h1>
-        </div>
+        </div> -->
     <!-------- End Moto -------->
 
     <!------------- Tentang ----------->
-        <div class="tentang">
+        <!-- <div class="tentang">
             <img src="./img/Logo-removebg-preview 2.png" alt="" class="img-tentang">
             <div class="card-tentang">
                 <h1 class="tittle-tentang">About</h1>
@@ -55,15 +61,15 @@
                     hendrerit nec felis at consequat. Maecenas 
                     commodo rutrum consequat. </p>
             </div>
-        </div>
+        </div> -->
     <!---------- End Tentang ---------->
 
-    <!-------- Kompetesi ------------->
-        <div class="kompetesi">
+    <!-- ------ Kompetisi ------------->
+        <!-- <div class="kompetisi">
             <div class="text-kompetesi" style="text-align: center;">
-                <h2>Kompetesi</h2>
+                <h2>Kompetisi</h2>
             </div>
-            <div class="container">
+            <div class="mobile-legends">
                 <div class="row">
                   <div class="column-33">
                     <img src="/img/screen-post-hIXmJH9xhoo-unsplash.jpg" alt="App">
@@ -76,37 +82,115 @@
                         eu metus urna. Vestibulum a mattis libero. Integer 
                         hendrerit nec felis at consequat. Maecenas 
                         commodo rutrum consequat. </p>
-                    <div class="btn-daftar">
-                        <a href="#">DAFTAR LOMBA</a>
-                        <img src="img/Vector.svg" alt="Vector">
-                    </div>
+                        <div id="btn-daftar">
+                            <button class="learn-more">
+                              <span class="circle" aria-hidden="true">
+                                <span class="icon arrow"></span>
+                              </span>
+                              <span class="button-text">DAFTAR LOMBA</span>
+                            </button>
+                          </div>
                   </div>
                 </div>
               </div>
-              <div class="container">
+            <div class="guide-book">
                 <div class="row">
-                  <div class="column-66">
-                    <img src="/img/screen-post-hIXmJH9xhoo-unsplash.jpg" alt="App" class="img-66">
-                  </div>
-                  <div class="column-33">
-                    <h1 class="xlarge-font">Mobile Legends</h1>
+                  <div class="column-55">
+                    <h1 class="xlarge-font">Guide Book</h1>
                     <p class="large-font">Lorem ipsum dolor sit amet, consectetur 
                         adipiscing elit. Aenean in luctus justo. Mauris
                         aliquam dui bibendum eleifend luctus. Nulla 
                         eu metus urna. Vestibulum a mattis libero. Integer 
                         hendrerit nec felis at consequat. Maecenas 
                         commodo rutrum consequat. </p>
-                    <div class="btn-daftar">
-                        <a href="#">DAFTAR LOMBA</a>
-                        <img src="img/Vector.svg" alt="Vector">
+                        <div id="btn-daftar">
+                            <button class="learn-more">
+                              <span class="circle" aria-hidden="true">
+                                <span class="icon arrow"></span>
+                              </span>
+                              <span class="button-text">DOWNLOAD GUIDEBOOK</span>
+                            </button>
+                          </div>
+                  </div>
+                  <div class="column-44">
+                    <img src="/img/screen-post-hIXmJH9xhoo-unsplash.jpg" alt="App">
                   </div>
                 </div>
               </div>
+            </div> -->
+        <!-------- End Kompetisi ------- -->
+
+        <!-------- Timeline ------------->
+        <div class="timiline-page">
+            <div class="text-timeline" style="text-align: center;">
+                <h1>Timeline</h1>
+            </div>
+            <div>
+                <ul class="line">
+                  <li class="circle">
+                    <div>
+                      <time>1910</time>
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                  </li>
+                  <li class="circle">
+                    <div>
+                      <time>1920</time>
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                  </li>
+                  <li class="circle">
+                    <div>
+                      <time>1930</time>
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                  </li>
+                  <li class="circle">
+                    <div>
+                      <time>1940</time>
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                  </li>
+                  <li class="circle">
+                    <div>
+                      <time>1950</time>
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+            </p>
+                    </div>
+                  </li>
+                  <li class="circle">
+                    <div>
+                      <time>1960</time>
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+            </p>
+                    </div>
+                  </li>
+                  <li class="circle">
+                    <div>
+                      <time>1970</time>
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+            </p>
+                    </div>
+                  </li>
+                  <li class="circle">
+                    <div>
+                      <time>1980</time>
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+            </p>
+                    </div>
+                  </li>
+                  <li class="circle">
+                    <div>
+                      <time>1990</time>
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+            </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
         </div>
-    </div>
-    <!-------- End Kompetesi --------->
-    </div>
-    <footer class="footer-distributed">
+</div> 
+    <!-- <footer class="footer-distributed">
         <div class="footer-left">
             <h3>RUS CHAMPIONFEST 2022</h3>
 
@@ -149,6 +233,8 @@
                     <a href="#"><i class="twitter"><img src="/blog/img/icon/twitter.png" alt=""/></i></a>
             </div>
         </div>
-    </footer>
+    </footer> -->
+
+    <script src="script.js"></script>
 </body>
 </html>
