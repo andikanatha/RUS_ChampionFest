@@ -31,6 +31,9 @@ header {
     z-index: 1000;
 }
 
+/* Mobile */
+
+
 .logo {
     cursor: pointer;
     width: 80px;
@@ -471,12 +474,21 @@ header {
 }
 
 .btn-guide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 5%;
     border: 1px solid #fff;
     padding: 20px 30px;
     background-color: transparent;
     margin-left: 4rem;
     color: #fff;
+}
+
+.btn-guide img{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
 }
 
 .btn-guide:hover{
@@ -845,7 +857,5 @@ footer {
         margin-left: 0;
     }
 }
-
-
 
 /*  */
