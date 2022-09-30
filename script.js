@@ -60,64 +60,24 @@ function callbackFunc() {
     });
 });
 
-const menuToggle = document.querySelector('.menu-toggle input');
-const nav = document.querySelector('nav ul');
+  // Get the button:
+let mybutton = document.getElementById("myBtn");
 
-menuToggle.addEventListener('click', function(){
-    nav.classList.toggle('slide');
-})
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
 
-$('.buttonContainer').click(function(){
-	if($('.buttonContainer').hasClass('active')){
-		$(this).removeClass('active');
-		$('.complete').removeClass('fadein');
-		$('#counter').fadeOut(100);
-		$('.ball').fadeOut(100);
-		count().stop;
-	} else{
-		$(this).addClass('active');
-		$('#counter').fadeIn(200);
-		$('.ball').fadeIn(200);
-		count();
-	}
-});
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.opacity = "1";
+}else {
+    mybutton.style.opacity = "0";
+    mybutton.style.transform = "translateY(0)";
 
-//Loading
-function count(){
-	$({countNum: $('#counter').text()}).animate({countNum: 100}, {
-	  duration: 2000,
-	  easing:'linear',
-	  step: function() {
-		 $('#counter').text(Math.floor(this.countNum) + '%');
-	  },
-	  complete: function() {
-		 $('#counter').fadeOut(200);
-		 $('.complete').addClass('fadein');
-		 $('.ball').fadeOut(200);
-		  $('#button').fadeOut(100);
-		  setTimeout(function() {
-			   $('.buttonContainer').removeClass('active');
-			  $('.complete').removeClass('fadein');
-			  $('#button').fadeIn(200);
-   		}, 1000);
-	  }
-	});
+  }
 }
 
-function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
-  
-    for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 150;
-  
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
-      } else {
-        reveals[i].classList.remove("active");
-      }
-    }
-  }
-  
-  window.addEventListener("scroll", reveal);
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
