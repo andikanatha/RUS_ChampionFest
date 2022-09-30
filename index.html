@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RUS CHAMPIONSHIP FESTIFAL</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <link rel="stylesheet" href="timiline.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/timiline.css">
 </head>
 <body>
     <!-------- Navbar ---------->
@@ -16,10 +17,10 @@
         <img class="logo" src="img/logo-rus-header.svg" alt="logo rus">
         <nav>
             <ul class="nav_links">
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">EVENT</a></li>
-                <li><a href="#">TIMELINE</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a class="hover-underline-animation" href="#about">ABOUT</a></li>
+                <li><a class="hover-underline-animation" href="#event">EVENT</a></li>
+                <li><a class="hover-underline-animation" href="#timeline">TIMELINE</a></li>
+                <li><a class="hover-underline-animation" href="#contact">CONTACT</a></li>
             </ul>
         </nav>
         <a class="cta" href="#"><button>GUIDEBOOK <img src="img/logo-download.png" alt=""></button></a>
@@ -33,13 +34,13 @@
             <p class="text-intro">RUS<br>CHAMPIONFEST<br>2022</p>
         </div>
         <div class="img-intro">
-          <img src="./img/Logo-removebg-preview 2.png" alt="">
+          <img src="./img/Logo-removebg-preview 2.png" alt="" class="gambar-intro">
         </div>
       </div>
     <!------- End Main Page ------->
 
     <!------------- Tentang ----------->
-    <div class="about">
+    <div class="about" id="about">
       <h1 class="tittle-about">ABOUT</h1>
       <img src="./img/Logo-removebg-preview 2.png" alt="" class="img-about">
       <p class="desc-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in luctus justo. Mauris aliquam dui bibendum eleifend luctus. Nulla eu metus urna. Vestibulum a mattis libero. Integer  hendrerit nec felis at consequat. Maecenas commodo rutrum consequat.</p>
@@ -47,7 +48,7 @@
     <!---------- End Tentang ---------->
 
     <!-------- Daftar ------------->
-    <div class="daftar">
+    <div class="daftar" id="event">
       <h1 class="tittle-daftar">
           “Join as five and battle as one!”
       </h1>
@@ -66,7 +67,7 @@
     <!-------- End Daftar --------->
 
     <!---------- Timiline ---------->
-    <section class="timeline">
+    <section class="timeline" id="timeline">
       <h1 class="tittle-timeline">TIMELINE</h1>
       <ul>
           <!-- 12 time li -->
@@ -130,7 +131,8 @@
  
     <!---------- SPONSOR ------->
     <div class="container">
-      <h2 class="text-center font-weight-bold">Our Partners</h2>
+      <h2 class="text-center font-weight-bold">PARTNERSHIP</h2>
+      <p class="sub-judul">SPONSOR</p>
       <section class="customer-logos slider">
           <div class="slide"><img src="img/logo-rusanimation.svg" alt="logo"></div>
           <div class="slide"><img src="img/logo-dicoding.svg" alt="logo"></div>
@@ -144,7 +146,7 @@
   </div>
 
   <!--------- Footer -------->
-    <footer class="footer-distributed">
+    <footer class="footer-distributed" id="contact">
         <div class="footer-left">
             <h3>RUS CHAMPIONFEST 2022</h3>
 
