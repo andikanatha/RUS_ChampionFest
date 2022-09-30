@@ -628,6 +628,20 @@ h2{
     .container{
         padding-top: 100px;
     }
+
+    h2{
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        font-size: 54px;
+    }
+
+    .sub-judul{
+        color: #fff;
+        text-align: center;
+        padding: 5px;
+        font-size: 27px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -637,6 +651,20 @@ h2{
 
     .slick-slide img{
         width: 100%;
+    }
+
+    h2{
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        font-size: 44px;
+    }
+
+    .sub-judul{
+        color: #fff;
+        text-align: center;
+        padding: 5px;
+        font-size: 22px;
     }
 }
 
