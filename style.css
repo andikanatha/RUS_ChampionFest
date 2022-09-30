@@ -163,9 +163,13 @@ body{
         padding: 0;
         margin: 2rem auto;
     }
+
+    .garis-content{
+        display: none;
+    }
 }
-/* .garis-content{
-    width: 20px;
-    height: 410px;
-    background-color: #ff0000;
-} */
+.garis-content{
+    border-left: 5px #fff solid;
+    height: 370px;
+    width: 0px;
+}
