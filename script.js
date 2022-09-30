@@ -60,6 +60,15 @@ function callbackFunc() {
     });
 });
 
+const menuToggle = document.querySelector('.menu-toggle input');
+const nav = document.querySelector('nav ul');
+
+menuToggle.addEventListener('click', function() {
+    nav.classList.toggle('slide');
+});
+
+
+
   // Get the button:
 let mybutton = document.getElementById("myBtn");
 
