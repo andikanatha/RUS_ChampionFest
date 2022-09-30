@@ -8,7 +8,8 @@ body{
 }
 
 .event{
-    margin: 10rem 0;
+    padding-top: 5rem;
+    margin: 5rem 0;
 }
 
 .tittle-event{
@@ -42,6 +43,8 @@ body{
 
 .img-content{
     margin-top: 27px;
+    width: 449px;
+    height: 216px;
 }
 
 .text-content{
@@ -49,9 +52,118 @@ body{
     margin-top: 31px;
     text-align: left;
     color: #fff;
-    
 }
 
+@media only screen and (max-width: 1150px) {
+    .tittle-content{
+        font-size: 25px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .img-content{
+        margin-top: 27px;
+        width: 409px;
+        height: 196px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .tittle-event{
+        font-size: 55px;
+        text-align: center;
+        color: #fff;
+    }
+    
+    .tittle-content{
+        font-size: 23px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .img-content{
+        margin-top: 27px;
+        width: 279px;
+        height: 156px;
+    }
+
+    .text-content{
+        font-size: 18px;
+        margin-top: 31px;
+        text-align: left;
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .tittle-event{
+        font-size: 48px;
+        text-align: center;
+        color: #fff;
+    }
+    
+    .tittle-content{
+        font-size: 20px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .img-content{
+        margin-top: 27px;
+        width: 239px;
+        height: 126px;
+    }
+
+    .text-content{
+        font-size: 18px;
+        margin-top: 31px;
+        text-align: left;
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .tittle-event{
+        font-size: 58px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .img-content{
+        margin-top: 10px;
+    }
+    
+    .tittle-content{
+        font-size: 30px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .text-content{
+        font-size: 16px;
+        text-align: center;
+        color: #fff;
+        margin: 31px 2rem 0 2rem;
+    } 
+
+    .content-event{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 2rem 0;
+        text-align: center;
+    }
+
+    .content1{
+        padding: 0;
+        margin: 0 auto;
+    }
+    
+    .content2{
+        padding: 0;
+        margin: 2rem auto;
+    }
+}
 /* .garis-content{
     width: 20px;
     height: 410px;
