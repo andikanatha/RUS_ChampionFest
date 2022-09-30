@@ -24,10 +24,13 @@ li, a, button {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2% 15%;
+    padding: 10px 15%;
     z-index: 1000;
     background-color: #1B2031;
 }
@@ -61,6 +64,7 @@ header {
     cursor: pointer;
     width: 80px;
     height: 80px;
+    align-items: center;
 }
 
 nav{
