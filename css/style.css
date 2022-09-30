@@ -12,8 +12,8 @@ html{
 }
 
 body{
-    background-color: #1B2031;
     overflow-x: hidden;
+    background-color: #1B2031;
 }
 /* header */
 li, a, button {
@@ -27,17 +27,62 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10%;
+    padding: 2% 15%;
     z-index: 1000;
+    background-color: #1B2031;
 }
 
-/* Mobile */
+.cta-regis{
+    display: flex;
+    justify-content: center;
+}
 
+.cta-regis button{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 25px;
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    transition: all 0.3s ease 0s;
+} 
+
+.cta-regis button:hover{
+    color: #fff;
+    background-color: #539ac6;
+    box-shadow: 0px 15px 20px rgba(64, 153, 224, 0.2);
+    border: 1px solid #539ac6;
+}
 
 .logo {
     cursor: pointer;
     width: 80px;
     height: 80px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.register-mobile{
+    list-style: none;
+    display: none;
+}
+
+.register-dekstop{
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav_links{
@@ -55,9 +100,9 @@ header {
     width: 100%;
     transform: scaleX(0);
     height: 2px;
-    bottom: 0;
+    bottom: -4px;
     left: 0;
-    background-color: #0087ca;
+    background-color: #539ac6;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
@@ -81,40 +126,119 @@ header {
     color: #539ac6;
 }
 
-.cta{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+/* Hamburger menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 25px;
+    justify-content: space-between;
+    position: relative;
 }
 
-.cta button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 9px 25px;
-    background-color: transparent;
-    border-radius: 10px;
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+    top: -5px;
     cursor: pointer;
-    border: 1px solid #fff;
-    transition: all 0.3s ease 0s;
-}   
-
-.cta img{
-    width: 30px;
-    height: 30px;
-    margin-left: 20px;
+    z-index: 1;
 }
 
-.cta button:hover{
-    color: #fff;
-    background: #182148;
-    border: 1px solid #182148;
+.menu-toggle span{
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: #539ac6;
+    border-radius: 3px;
+    transition: all 0.5s;
 }
+
+/* Hamburger menu Animations */
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2){
+    background-color: white;
+    transform: rotate(45deg) translate(-3px, -3px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4){
+    background-color: white;
+    transform: rotate(-45deg) translate(-2px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3){
+    opacity: 0;
+    transform: scale(0);
+}
+
+
+
+
+
+/* Mobile */
+
+/* Ukuran Tablet */
+@media screen and (max-width: 768px) {
+    nav ul{
+        width: 50%;
+    }
+}
+
+/* Ukuran mobile */
+@media screen and (max-width: 576px){
+    .menu-toggle{
+        display: flex;
+        
+    }
+
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 50px;
+        width: 64%;
+        height: 100vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background-color: #1B2031;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    .cta button{
+        padding: 2px;
+    }
+
+    nav ul.slide{
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .register-mobile{
+        display: initial;
+    }
+    
+    .register-dekstop{
+        display: none;
+    }
+}
+
+
+/*  */
 
 
 /* intro */
 .main-page{
-    margin: 40px 0 0 0;
+    margin: 0;
     padding: 90px 0;
     background-image: url(/img/bg-home.png);
     background-size: cover;
@@ -456,33 +580,51 @@ header {
     flex-direction: row;
     justify-content: center;
     margin-top: 84px;
-
 }
 
 .btn-register{
-    border-radius: 5%;
-    border: 1px solid #fff;
-    padding: 20px 30px  ;
-    background-color: transparent;
-    margin-right: 4rem;
-    color: #fff;
+    width: 280px;
+    height: 60px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    margin-right: 10px;
+    cursor: pointer;
+    outline: none;
 }
 
 .btn-register:hover{
-    background-color: #fff;
-    color: #1b2031;
+    background-color: #539ac6;
+    box-shadow: 0px 15px 20px rgba(64, 153, 224, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
 }
 
 .btn-guide{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5%;
-    border: 1px solid #fff;
-    padding: 20px 30px;
-    background-color: transparent;
-    margin-left: 4rem;
-    color: #fff;
+    width: 280px;
+    height: 60px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
 }
 
 .btn-guide img{
@@ -492,8 +634,10 @@ header {
 }
 
 .btn-guide:hover{
-    background-color: #fff;
-    color: #1b2031;
+    background-color: #539ac6;
+    box-shadow: 0px 15px 20px rgba(64, 153, 224, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
 }
 
 .icon-daftar{
@@ -578,6 +722,12 @@ header {
         padding: 0 2.5rem;
         padding-top: 12px;
     }
+    .btn-register{
+        width: 170px;
+    }
+    .btn-guide{
+        width: 170px;
+    }
 }
 /*  */
 
@@ -640,6 +790,20 @@ h2{
     .container{
         padding-top: 100px;
     }
+
+    h2{
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        font-size: 54px;
+    }
+
+    .sub-judul{
+        color: #fff;
+        text-align: center;
+        padding: 5px;
+        font-size: 27px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -649,6 +813,20 @@ h2{
 
     .slick-slide img{
         width: 100%;
+    }
+
+    h2{
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        font-size: 44px;
+    }
+
+    .sub-judul{
+        color: #fff;
+        text-align: center;
+        padding: 5px;
+        font-size: 22px;
     }
 }
 
