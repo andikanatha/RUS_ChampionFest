@@ -7,14 +7,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
-    background: rgb(48,88,113);
-    background: linear-gradient(90deg, rgba(48,88,113,1) 35%, rgba(48,64,113,1) 100%);
-}
-
 /* -------Navbar------ */
 .navbar-1{
     background-color: #576696;
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
 }
 
 .navbar{
@@ -41,8 +37,13 @@ body{
 .nav_link li a {
     text-decoration: none;
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
+}
+
+.nav_link li a:hover{
+    color: #8bc1ff;
+    transition: all 0.3s ease;
 }
 
 .logo img{
@@ -50,7 +51,7 @@ body{
     height: 80px;
 }
 
-.btn-register button{
+.btn-register a{
     background-color: #FFFFFF;
     color: #576696;
     padding: 10px 20px;
@@ -59,11 +60,40 @@ body{
     cursor: pointer;
 }
 
-.btn-register button a{
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 400;
+.btn-register a:hover{
+    background-color: #8bc1ff;
+    color: #fff;
 }
+
+.btn-register a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 
 
 /* -------End Navbar-------- */
