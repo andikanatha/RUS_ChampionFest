@@ -18,111 +18,47 @@
 </head>
 <body>
     <!-------- Navbar ---------->
-    <header>
-        <nav>
-            <a href="#beranda"><img class="logo" src="img/logo-rus-header.svg" alt="logo rus"></a>
-            <ul class="nav_links">
-                <li><a class="hover-underline-animation" href="#beranda">BERANDA</a></li>
-                <li><a class="hover-underline-animation" href="#about">ABOUT</a></li>
-                <li><a class="hover-underline-animation" href="#event">EVENT</a></li>
-                <li><a class="hover-underline-animation" href="#timeline">TIMELINE</a></li>
-                <li><a class="hover-underline-animation" href="#contact">CONTACT</a></li>
-                <li><a class="cta-regis register-mobile" href="#"><button>REGISTER</button></a></li>
+    <div class="navbar-1">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#"><img src="/img/LOGO RUS CHAMPIONSHIP 2022-10.png" alt="logo"></a>
+            </div>
+            <ul class="nav_link">
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Tentang</a></li>
+                <li><a href="#">Event</a></li>
+                <li><a href="#">Timiline</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
-
-            <li class="register-dekstop"><a class="cta-regis" href="#"><button>REGISTER</button></a></li>
-
-            <div class="menu-toggle">
-                <input type="checkbox">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="btn-register">
+                <button><a href="#">Register</a></button>
             </div>
         </nav>
-
-    </header>
+    </div>
     <!--------- End Navbar --------->
     
     <!-------- Main Page ------->
-    <div class="tbody">
-        <button class="slide-top" onclick="topFunction()" id="myBtn" title="Go to top"><img src="/img/up-arrow (1).png" alt=""></button>
-      <div class="main-page"  id="beranda">
-          <div class="img-intro">
-            <img src="./img/LOGO RUS CHAMPIONSHIP 2022-10.png" alt="" class="gambar-intro"> 
-          </div>
-         <div class="intro">
-            <p class="text-intro">RUS<br>CHAMPIONFEST 2022</p>
-        </div>
-      </div>
+ 
     <!------- End Main Page ------->
 
     <!------------- Tentang ----------->
-    <div class="about" id="about">
-      <h1 class="tittle-about">ABOUT</h1>
-      <img src="./img/LOGO RUS CHAMPIONSHIP 2022-10.png" alt="" class="img-about">
-      <p class="desc-about">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita eveniet obcaecati, iste hic quaerat labore eaque pariatur reiciendis cupiditate fugiat, fuga architecto. Tempore suscipit, aspernatur omnis corrupti velit rem veniam, sint consequuntur tenetur ipsum similique sapiente quas debitis nam eveniet consectetur dolorem culpa ad laboriosam. Veritatis quod id totam aspernatur enim voluptatem laborum, obcaecati voluptate. Aperiam, at tenetur assumenda quia odit, voluptas cum nobis nemo perspiciatis recusandae officia modi nulla commodi amet dolorum provident doloribus molestiae quos expedita eius voluptate!</p>
-    </div>
+
     <!---------- End Tentang ---------->
 
     <!-------- Daftar ------------->
-    <div class="daftar" id="event">
-      <h1 class="tittle-daftar">
-          “Join as five and battle as one!”
-      </h1>
-      <h2 class="sub-daftar">
-          Mobile Legends
-      </h2>
-      <p class="text-daftar">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
 
-      <div class="btn">
-        <div class="btn1"><button class="btn-register">REGISTER</button></div>
-        <div class="btn1"><button class="btn-guide">GUIDEBOOK <img src="/img/logo-black-download.png" alt=""></button></div>
-      </div>
-      <img src="./img/logo-ml.png" alt="" class="icon-daftar">
-  </div>
     <!-------- End Daftar --------->
 
     <!----------- Event ----------->
 
-    <div class="event">
-        <h1 class="tittle-event">Event</h1>
-            <div class="content-event">
-                <div class="content1">
-                    <h2 class="tittle-content">GRAND OPENING</h2>
-                    <img src="./img/screen-post-hIXmJH9xhoo-unsplash.jpg" alt="" class="img-content">
-                    <p class="text-content">Lorem ipsum dolor sit amet, consectetur 
-                        adipiscing elit, sed do eiusmod tempor incididunt 
-                        ut labore et dolore magna aliqua. Ut enim ad 
-                        minim veniam, quis nostrud exercitation ullamco 
-                        laboris nisi ut aliquip ex ea commodo consequat. 
-                        Duis aute irure dolor in reprehenderit in voluptate 
-                        velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                </div>
-                <div class="garis-content"></div>
-                <div class="content2">
-                    <h2 class="tittle-content">TECHNICAL MEETING</h2>
-                    <img src="./img/screen-post-hIXmJH9xhoo-unsplash.jpg" alt="" class="img-content">
-                    <p class="text-content">Lorem ipsum dolor sit amet, consectetur 
-                        adipiscing elit, sed do eiusmod tempor incididunt 
-                        ut labore et dolore magna aliqua. Ut enim ad 
-                        minim veniam, quis nostrud exercitation ullamco 
-                        laboris nisi ut aliquip ex ea commodo consequat. 
-                        Duis aute irure dolor in reprehenderit in voluptate 
-                        velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                </div>
-            </div>
-    </div>
-
     <!--------- End Event --------->
 
     <!---------- Timiline ---------->
-    <section class="timeline" id="timeline">
+    <!-- <section class="timeline" id="timeline">
       <h1 class="tittle-timeline">TIMELINE</h1>
-      <ul>
+      <ul> -->
           <!-- 12 time li -->
-          <li>
+          <!-- <li>
               <div>
                   <time>DAY 1</time>
                   <div class="discovery">
@@ -177,11 +113,11 @@
            </div>
        </li>
       </ul>
-  </section>
+  </section> -->
   <!----------- End Timiline ------------->
  
     <!---------- SPONSOR ------->
-    <div class="container">
+    <!-- <div class="container">
       <h2 class="text-center font-weight-bold">PARTNERSHIP</h2>
       <p class="sub-judul">SPONSOR</p>
       <section class="customer-logos slider">
@@ -192,55 +128,11 @@
           <div class="slide"><img src="img/logo-rus.svg" alt="logo"></div>
           <div class="slide"><img src="img/logo-djarum.svg" alt="logo"></div>
       </section>
-  </div>
-    <!------------ SPONSOR ------------>
-  </div>
+  </div> -->
+    <!------------ End SPONSOR ------------>
+ 
 
   <!--------- Footer -------->
-    <footer class="footer-distributed" id="contact">
-        <div class="footer-left">
-            <h3>RUS CHAMPIONFEST 2022</h3>
-
-            <p class="footer-links">
-                <a href="#" style="padding: 0 0.5rem 0 0;">Beranda</a> | <a href="#" style="padding: 0 0.5rem;">About</a> | <a href="#" style="padding: 0 0.5rem;">Event</a> |
-                <a href="#" style="padding: 0 0 0 0.5rem;">Timeline</a>
-            </p>
-
-            <p class="footer-company-name">
-                Copyright © 2022 <strong>PPLG SMK RADEN UMAR SAID</strong> All rights reserved
-            </p>
-        </div>
-
-        <div class="footer-center">
-            <div>
-                <p class="footer-lokasi">
-                    <span class="tittle-kontak">Kontak</span>
-                    <strong>SMK RADEN UMAR SAID <br /></strong> Jalan Sukun Raya No.09, Besito Kulon, Besito, Kec. Gebog, Kabupaten Kudus, Jawa Tengah 59333
-                </p>
-            </div>
-            <br />
-            <div>
-                <i class="fa fa-phone"><img src="/blog/img/icon/call-answer.png" alt=""/></i>
-                <p>+62 0291 430202</p>
-            </div>
-            <div>
-                <i class="email"><img src="/blog/img/icon/envelope.png" alt=""/></i>
-                <p><a href="mailto:smkradenumarsaidkudus@gmail.com">smkradenumarsaidkudus</a></p>
-      </div>
-    </div>
-    <div class="footer-right">
-      <p class="footer-company-about">
-        <span>Tentang Kami</span>
-        <strong>RUS CF</strong> | RUS CF Adalah sebuah website untuk mengikuti lomba-lomba yang ada di SMK RUS, dan juga untuk mengetahui informasi-informasi terbaru yang ada di SMK RUS.
-      </p>
-      <div class="footer-icons">
-        <a href="#"><i class="facebook"><img src="/blog/img/icon/fb.png" alt="" /></i></a>
-                    <a href="#"><i class="instagram"><img src="/blog/img/icon/ig.png" alt="" /></i></a>
-                    <a href="#"><i class="github"><img src="/blog/img/icon/github.png" alt="" /></i></a>
-                    <a href="#"><i class="twitter"><img src="/blog/img/icon/twitter.png" alt=""/></i></a>
-            </div>
-        </div>
-    </footer>
 
     <!--------- Footer --------->
 
