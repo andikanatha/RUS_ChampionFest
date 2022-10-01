@@ -8,8 +8,8 @@
 }
 
 body{
-    background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(48,88,113,1) 35%, rgba(48,64,113,1) 100%);
+    background: rgb(48,88,113);
+    background: linear-gradient(90deg, rgba(48,88,113,1) 35%, rgba(48,64,113,1) 100%);
 }
 
 /* -------Navbar------ */
