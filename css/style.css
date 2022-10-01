@@ -7,6 +7,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    background: #2C3A69;
+}
+
 /* -------Navbar------ */
 .navbar-1{
     background-color: #576696;
