@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'KoHo', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 html{
@@ -256,30 +257,30 @@ nav ul {
 
 /* intro */
 .main-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 90px 0;
     background-image: url(/img/bg-home.png);
+    height: 100vh;
     background-size: cover;
     background-position: center;
 }
 
 .text-intro{
+    font-family: 'Space Grotesk', sans-serif;
     color: #fff;
     float: right;
     font-size: 4.9375rem;
     text-align: center;
     font-weight: bold;
-    margin: 10rem 5.1rem;
     text-shadow:
     4px  4px 0 #c2c3ca,
    -2px -2px 0 #000,  
     2px -2px 0 #000,
    -4px  4px 0 #000,
     2px  2px 0 #000;
-}
-
-.img-intro{
-    margin: 5rem 0 0 5.1rem;
 }
 
 .gambar-intro{
