@@ -80,8 +80,6 @@ function scrollFunction() {
     mybutton.style.opacity = "1";
 }else {
     mybutton.style.opacity = "0";
-    mybutton.style.transform = "translateY(0)";
-
   }
 }
 
