@@ -60,31 +60,31 @@ function callbackFunc() {
     });
 });
 
+// Navbar ------
 const menuToggle = document.querySelector('.menu-toggle input');
-const nav = document.querySelector('nav ul');
+const nav = document.querySelector('.navbar-1 ul');
 
-menuToggle.addEventListener('click', function() {
+menuToggle.addEventListener('click', function(){
     nav.classList.toggle('slide');
 });
 
 
+// BUTTON TO TOP --------
+$(window).on("scroll", function () {
+    if (window.scrollY > window.outerHeight) {
+      $("#scrollToTop").addClass("active");
+      setTimeout(function() {
+        var theta = ($(window).scrollTop() - (window.outerHeight + (window.outerHeight/5))) / 500;
+        $('#scrollToTop').css({ transform: 'rotate(' + theta + 'rad)' });
+      })
+    } else {
+      $("#scrollToTop").removeClass("active");
+    }
+  });
+  
+  $('#scrollToTop').on('click',function() {
+    $("html, body").animate({ scrollTop: 0 }, 900);
+  })
 
-  // Get the button:
-let mybutton = document.getElementById("myBtn");
+// NAVBAR MELAYANG -----
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.opacity = "1";
-}else {
-    mybutton.style.opacity = "0";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}

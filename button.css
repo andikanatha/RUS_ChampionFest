@@ -1,0 +1,45 @@
+#scrollToTop {
+  position: fixed;
+  bottom: 3rem;
+  color: #fff;
+  background-color: #8bc1ff;
+  right: 3rem;
+  box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.5);
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  font-family: "Arial";
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -12rem;
+  transition: margin-bottom 0.2s;
+  cursor: pointer;
+  z-index: 1000;
+}
+#scrollToTop.active {
+  margin-bottom: 0;
+}
+#scrollToTop:hover {
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  box-shadow: 4px 8px 71px 3px rgb(0, 153, 255);
+}
+
+@-webkit-keyframes rotate {
+  to {
+    transform: rotate(720deg);
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(720deg);
+  }
+}/*# sourceMappingURL=button.css.map */
