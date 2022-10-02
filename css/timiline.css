@@ -50,28 +50,30 @@
     position: relative;
     bottom: 0;
     width: 400px;
+    height: 200px;
     padding: 20px;
     background: #C0DAF7;
     box-shadow: 4px 13px 30px 1px
     rgba(0, 99, 230, 0.3);
     border-radius: 5px;
     display: flex;
+    justify-content: center;
     align-items: center;
   }
   .timeline ul li div time {
     position: absolute;
     background: #f5af19;
-    width: 80px;
+    width: 200px;
     height: 30px;
-    top: -15px;
+    top: -20px;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
   }
   .timeline ul li div div {
-    height: 100px;
+    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -125,12 +127,17 @@
       }
       .timeline ul li{
           margin-left: 20px;
-  
       }
       .timeline ul li div{
           width: calc(100vw - 91px);
       }
       .timeline ul li:nth-of-type(even) > div{
           left: 45px;
+      }
+      .timeline ul li div div{
+          width: 100%;
+      }
+      .discovery{
+          text-align: center;
       }
   }
