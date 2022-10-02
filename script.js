@@ -62,7 +62,7 @@ function callbackFunc() {
 
 // Navbar ------
 const menuToggle = document.querySelector('.menu-toggle input');
-const nav = document.querySelector('.navbar-1 ul');
+const nav = document.querySelector('#navbar-1 ul');
 
 menuToggle.addEventListener('click', function(){
     nav.classList.toggle('slide');
@@ -87,4 +87,20 @@ $(window).on("scroll", function () {
   })
 
 // NAVBAR MELAYANG -----
+window.onscroll = function() {scrollFunction()};
 
+function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      document.getElementById("navbar").style.padding = "10px 50px";
+      document.getElementById("navbar").style.borderRadius = "40px";
+      document.getElementById("navbar").style.width = "90%";
+      document.getElementById("navbar").style.margin= "25px 0 0 100px";
+    document.getElementById("navbar").style.backgroundColor = "#576696";
+    } else {
+      document.getElementById("navbar").removeAttribute("style");
+      document.getElementById("navbar").style.margin = "0 0 0 0";
+    };
+    matchMedia("(max-width: 576px)").matches ? document.getElementById("navbar").removeAttribute("style") : null;
+  };
+
+// END NAVBAR MELAYANG -----
