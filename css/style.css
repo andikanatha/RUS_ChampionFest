@@ -236,9 +236,13 @@ body{
 
 .main-page{
   margin: 0;
-  padding: 70px 0;
+  padding: 180px 0;
   display: flex;
-
+  justify-content: center;
+  background-image: url(../img/bg-intro.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 70%;
 }
 
 .intro{
@@ -247,16 +251,15 @@ body{
 }
 
 .text-intro{
-  font-family: poppins;
   color: #fff;
   float: right;
   font-size: 69px;
+  font-weight: 600;
   text-align: left;
   margin: 6.5rem 70px 0 0;
 }
 
 .quotes-intro{
-  font-family: poppins;
   color: #fff;
   float: right;
   font-size: 45px;
@@ -282,7 +285,7 @@ body{
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 2.5px;
-  font-weight: 500;
+  font-weight: 700;
   color: #000;
   background-color: #fff;
   border: none;
@@ -310,7 +313,7 @@ body{
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: 500;
+  font-weight: 700;
   color: #000;
   background-color: #fff;
   border: none;
@@ -572,6 +575,7 @@ body{
   .main-page{
       display: flex;
       flex-direction: column;
+      background: none;
   }
 
   .text-intro{
@@ -602,6 +606,7 @@ body{
 @media only screen and (max-width: 700px) {
   .main-page{
       padding: 70px 0;
+      background: none;
   }
 
   .text-intro{
@@ -626,6 +631,7 @@ body{
 @media only screen and (max-width: 425px) {
   .main-page{
       padding: 30px 0;
+      background: none;
   }
 
   .btn-register-intro{
@@ -638,7 +644,8 @@ body{
 
 @media only screen and (max-width: 400px) {
   .main-page{
-      padding: 60px 0;
+      padding: 150px 0;
+      background: none;
   }
 
   .text-intro{
@@ -670,6 +677,7 @@ body{
 @media only screen and (max-width: 374px) {
   .main-page{
       padding: 100px 0;
+      background: none;
   }
 
   .text-intro{
@@ -792,7 +800,6 @@ body{
 
 /* event */
 .body-event {
-  font-family: Tahoma;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
@@ -804,7 +811,7 @@ body{
 .d-block, h2{
   color: #fff;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   display: block;
   margin: 0 auto;
   text-align: center;
@@ -1073,7 +1080,7 @@ input:checked ~ label {
 
 input:checked ~ label.label_testimonial-1 {
   color: #2C3A69;
-  border-right: solid 4px #2C3A69;
+  border-right: solid 4px #2c6938;
 }
 
 input:checked ~ label.label_testimonial-2 {
@@ -1157,7 +1164,7 @@ label:first-letter {
     left top,
     right top,
     from(#ffffff),
-    to(#304071)
+    to(#0040ff)
   );
   background-image: -webkit-linear-gradient(left, #ffffff, #304071);
   background-image: -o-linear-gradient(left, #ffffff, #304071);
