@@ -1,3 +1,38 @@
+var testimonialItems = document.querySelectorAll(".item label");
+var timer;
+function cycleTestimonials(index) {
+   timer = setTimeout(function() {
+    var evt;
+    if (document.createEvent){
+      
+      evt = document.createEvent('MouseEvent');
+      evt.initMouseEvent('click', true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+    } else {
+      
+      evt = new MouseEvent("click", {
+            view: window,
+            bubbles: true,
+            cancelable: true,
+            clientX: 20
+          });
+    }
+    var ele = "." + testimonialItems[index].className;
+    var ele2 = document.querySelector(ele)
+    ele2.dispatchEvent(evt);
+    index++;
+    if (index >= testimonialItems.length) {
+      index = 0;
+    }
+    cycleTestimonials(index);
+    document.querySelector(".testimonials").addEventListener("click", function() {
+      clearTimeout(timer);
+    });
+  }, 5000);
+}
+
+//menjalankan function
+cycleTestimonials(0);
+
 var items = document.querySelectorAll(".timeline li");
 
 function isElementInViewport(el){
@@ -94,13 +129,14 @@ function scrollFunction() {
       document.getElementById("navbar").style.padding = "10px 50px";
       document.getElementById("navbar").style.borderRadius = "40px";
       document.getElementById("navbar").style.width = "90%";
-      document.getElementById("navbar").style.margin= "25px 0 0 100px";
+      document.getElementById("navbar").style.margin= "25px 71px 0 71px";
     document.getElementById("navbar").style.backgroundColor = "#576696";
-    } else {
+    } else {  
       document.getElementById("navbar").removeAttribute("style");
       document.getElementById("navbar").style.margin = "0 0 0 0";
     };
     matchMedia("(max-width: 576px)").matches ? document.getElementById("navbar").removeAttribute("style") : null;
+    matchMedia("(max-width: 720px)").matches ? document.getElementById("navbar").removeAttribute("style") : null;
   };
 
 // END NAVBAR MELAYANG -----
