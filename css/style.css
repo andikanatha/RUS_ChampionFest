@@ -187,7 +187,7 @@ body{
   /* ------- Responsive Navbar ------ */
   /* ukuran tablet */
   @media screen and (max-width: 768px){
-    .navbar-1 ul{
+    #navbar-1 ul{
       width: 50%;
     }
   }
