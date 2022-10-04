@@ -224,6 +224,7 @@ body {
   #navbar-1 ul.slide {
     transform: translateX(0);
     opacity: 1;
+    padding: 100px;
   }
 
   .register-mobile {
@@ -236,6 +237,10 @@ body {
 }
 
 /* -------End Navbar-------- */
+
+/* ----- Button to top ------ */
+
+/* ----- End Button to top ---------- */
 
 /* main */
 

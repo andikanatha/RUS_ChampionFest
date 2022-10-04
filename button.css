@@ -9,7 +9,6 @@
   width: 80px;
   height: 80px;
   display: flex;
-  font-family: "Arial";
   align-items: center;
   justify-content: center;
   margin-bottom: -12rem;
@@ -21,14 +20,6 @@
   margin-bottom: 0;
 }
 #scrollToTop:hover {
-  -webkit-animation-name: rotate;
-          animation-name: rotate;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
   box-shadow: 4px 8px 71px 3px rgb(0, 153, 255);
 }
 
@@ -37,7 +28,6 @@
     transform: rotate(720deg);
   }
 }
-
 @keyframes rotate {
   to {
     transform: rotate(720deg);

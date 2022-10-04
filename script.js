@@ -64,10 +64,12 @@ function callbackFunc() {
 const menuToggle = document.querySelector('.menu-toggle input');
 const nav = document.querySelector('#navbar-1 ul');
 
+
 menuToggle.addEventListener('click', function(){
     nav.classList.toggle('slide');
-});
 
+});
+// end Navbar ------
 
 // BUTTON TO TOP --------
 $(window).on("scroll", function () {
@@ -83,7 +85,7 @@ $(window).on("scroll", function () {
   });
   
   $('#scrollToTop').on('click',function() {
-    $("html, body").animate({ scrollTop: 0 }, 900);
+    $("html, body").animate({ scrollTop: 0 }, 100);
   })
 
 // NAVBAR MELAYANG -----
