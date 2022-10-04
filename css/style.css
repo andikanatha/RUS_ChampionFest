@@ -238,10 +238,6 @@ body {
 
 /* -------End Navbar-------- */
 
-/* ----- Button to top ------ */
-
-/* ----- End Button to top ---------- */
-
 /* main */
 
 .body-intro {
@@ -1501,7 +1497,7 @@ footer a {
 }
 
 @media only screen and (min-width: 77.5rem
-
+  
   /* 1240px */
 ) {
   .ft-main {
@@ -1512,27 +1508,6 @@ footer a {
 .ft-main-item {
   padding: 1.25rem;
   min-width: 12.5rem;
-}
-
-/* Footer main | Newsletter form */
-form {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-input[type="email"] {
-  border: 0;
-  padding: 0.625rem;
-  margin-top: 0.3125rem;
-}
-
-input[type="submit"] {
-  background-color: #00d188;
-  color: #fff;
-  cursor: pointer;
-  border: 0;
-  padding: 0.625rem 0.9375rem;
-  margin-top: 0.3125rem;
 }
 
 /* Footer social */
