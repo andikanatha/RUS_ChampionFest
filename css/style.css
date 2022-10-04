@@ -247,23 +247,12 @@ body {
   background-image: url(../img/bg-intro2.png);
   background-repeat: no-repeat;
   background-position: right;
-  /* height: 100vh; */
-}
-
-.drop {
-  display: flex;
-  justify-content: center;
-  margin-top: -2rem;
 }
 
 .main-page {
   margin: 50px 0;
-  /* padding: 0 0 50px 0; */
   display: flex;
   justify-content: center;
-  /* background-image: url(../img/bg-intro2.png);
-  background-repeat: no-repeat;
-  background-position: right; */
 }
 
 .intro {
@@ -671,7 +660,6 @@ body {
 @media only screen and (max-width: 425px) {
   .main-page {
     padding: 70px 0;
-    /* background: none; */
     background-size: 100%;
   }
 
@@ -692,7 +680,6 @@ body {
 @media only screen and (max-width: 400px) {
   .main-page {
     padding: 90px 0;
-    /* background: none; */
   }
 
   .text-intro {
@@ -719,13 +706,9 @@ body {
   }
 }
 
-/* @media only screen and (max-width: 376px) {
-} */
-
 @media only screen and (max-width: 374px) {
   .main-page {
     padding: 100px 0;
-    /* background: none; */
   }
 
   .text-intro {
@@ -769,10 +752,7 @@ body {
 
 .about {
   text-align: center;
-  /* background: #1b2031;
-  background-image: url(/img/Vector.svg); */
   width: 100%;
-  /* background-size: cover; */
   margin: 0;
 }
 
@@ -898,6 +878,7 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
+  border-radius: 50px;
 }
 
 #left-zone {
@@ -938,9 +919,9 @@ body {
 label {
   display: block;
   opacity: 0.5;
-  height: 50px;
+  height: 80px;
   text-align: center;
-  line-height: 50px;
+  line-height: 80px;
   position: relative;
 }
 
@@ -957,7 +938,7 @@ label:hover {
   -webkit-transform: translateY(100%);
   -ms-transform: translateY(100%);
   transform: translateY(100%);
-  height: 50%;
+  height: 70%;
   width: 100%;
   -webkit-transition: 0.5s ease-out;
   -o-transition: 0.5s ease-out;
@@ -1043,19 +1024,46 @@ input:checked~.content-test {
 
 /* If the screen size is 480px or less */
 @media (max-width: 480px) {
+  #left-zone .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    margin: 60px auto;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  #left-zone {
+    height: 30%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  
+  #flex-container {
+    height: 700px;
+  }
+
   .content_testimonial-1 .picto {
-    padding-top: 100px;
+    padding-top: 150px;
   }
 
   .content_testimonial-2 .picto {
-    padding-top: 100px;
-  }
-
-  .content_testimonial-3 .picto {
-    padding-top: 100px;
-  }
-
-  .content_testimonial-4 .picto {
     padding-top: 100px;
   }
 
@@ -1159,22 +1167,27 @@ label.label_testimonial-1:before {
   content: " ";
   display: block;
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   margin-left: 15px;
-  background-image: url("..//img/LOGO\ RUS\ CHAMPIONSHIP\ 2022-10.png");
+  background-image: url("..//img/Logo-removebg-preview\ 2.png");
   background-position: center;
   background-size: 75% 75%;
   background-repeat: no-repeat;
   border-radius: 50%;
+}
+
+.label_testimonial-1{
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 label.label_testimonial-2:before {
   content: " ";
   display: block;
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   margin-left: 15px;
   background-image: url("..//img/Logo-removebg-preview 2.png");
   background-position: center;
@@ -1183,32 +1196,9 @@ label.label_testimonial-2:before {
   background-repeat: no-repeat;
 }
 
-label.label_testimonial-3:before {
-  content: " ";
-  display: block;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  margin-left: 15px;
-  background-image: url("..//img/LOGO\ RUS\ CHAMPIONSHIP\ 2022-10.png");
-  background-position: center;
-  background-size: 75% 75%;
-  background-repeat: no-repeat;
-  border-radius: 50%;
-}
-
-label.label_testimonial-4:before {
-  content: " ";
-  display: block;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  margin-left: 15px;
-  background-image: url("..//img/Logo-removebg-preview 2.png");
-  background-position: center;
-  background-size: 75% 75%;
-  background-repeat: no-repeat;
-  border-radius: 50%;
+.label_testimonial-2{
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 label:first-letter {
@@ -1224,7 +1214,7 @@ label:first-letter {
   background-image: -webkit-linear-gradient(left, #ffffff, #304071);
   background-image: -o-linear-gradient(left, #ffffff, #304071);
   background-image: linear-gradient(to right, #ffffff, #304071);
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   -webkit-transition: font-size 0.5s;
   -o-transition: font-size 0.5s;
   transition: font-size 0.5s;
@@ -1239,46 +1229,15 @@ label:first-letter {
   background-image: -webkit-linear-gradient(left, #ffffff, #304071);
   background-image: -o-linear-gradient(left, #ffffff, #304071);
   background-image: linear-gradient(to right, #ffffff, #304071);
-  font-size: 1.2rem;
-  -webkit-transition: font-size 0.5s;
-  -o-transition: font-size 0.5s;
-  transition: font-size 0.5s;
-}
-
-.label_testimonial-3:hover {
-  background-image: -webkit-gradient(linear,
-      left top,
-      right top,
-      from(#ffffff),
-      to(#304071));
-  background-image: -webkit-linear-gradient(left, #ffffff, #304071);
-  background-image: -o-linear-gradient(left, #ffffff, #304071);
-  background-image: linear-gradient(to right, #ffffff, #304071);
-  font-size: 1.2rem;
-  -webkit-transition: font-size 0.5s;
-  -o-transition: font-size 0.5s;
-  transition: font-size 0.5s;
-}
-
-.label_testimonial-4:hover {
-  background-image: -webkit-gradient(linear,
-      left top,
-      right top,
-      from(#ffffff),
-      to(#304071));
-  background-image: -webkit-linear-gradient(left, #ffffff, #304071);
-  background-image: -o-linear-gradient(left, #ffffff, #304071);
-  background-image: linear-gradient(to right, #ffffff, #304071);
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   -webkit-transition: font-size 0.5s;
   -o-transition: font-size 0.5s;
   transition: font-size 0.5s;
 }
 
 p.testimonialState {
-  margin-top: -5px;
-  font-size: 0.9rem;
-  font-style: bold;
+  font-size: 1.1rem;
+  font-weight: bold;
   color: #33475c;
 }
 
@@ -1496,10 +1455,7 @@ footer a {
   }
 }
 
-@media only screen and (min-width: 77.5rem
-  
-  /* 1240px */
-) {
+@media only screen and (min-width: 77.5rem) {
   .ft-main {
     justify-content: space-evenly;
   }
