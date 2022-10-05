@@ -61,14 +61,21 @@ function callbackFunc() {
 });
 
 // Navbar ------
-const menuToggle = document.querySelector('.menu-toggle input');
+const menuToggle = document.querySelectorAll('.menu-toggle input');
 const nav = document.querySelector('#navbar-1 ul');
 
-
-menuToggle.addEventListener('click', function(){
-    nav.classList.toggle('slide');
-
-});
+menuToggle.forEach(function(toggle) {
+  toggle.addEventListener('click', function(){
+        nav.classList.toggle('slide');
+        //close navbar when click outside
+        document.addEventListener('click', function(e){
+            if(e.target !== nav && e.target !== toggle){
+                nav.classList.remove('slide');
+                toggle.checked = false;
+            }
+        });
+    });
+})
 // end Navbar ------
 
 // BUTTON TO TOP --------
@@ -97,7 +104,7 @@ function scrollFunction() {
       document.getElementById("navbar").style.borderRadius = "40px";
       document.getElementById("navbar").style.width = "90%";
       document.getElementById("navbar").style.margin= "25px 71px 0 71px";
-    document.getElementById("navbar").style.backgroundColor = "#576696";
+    document.getElementById("navbar").style.backgroundColor = "#220C61";
     } else {  
       document.getElementById("navbar").removeAttribute("style");
       document.getElementById("navbar").style.margin = "0 0 0 0";
