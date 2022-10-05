@@ -128,6 +128,8 @@ body {
   list-style: none;
 }
 
+
+
 .hover-underline-animation {
   display: inline-block;
   position: relative;
@@ -206,7 +208,9 @@ body {
   transform: scale(0);
 }
 
-
+.contact-timeline{
+  display: none;
+}
 
 /* ------- Responsive Navbar ------ */
 /* ukuran tablet */
@@ -247,7 +251,7 @@ body {
     padding: 100px;
   }
 
-  .navbar-left.register-mobile {
+  .register-mobile {
     display: initial;
   }
 
@@ -256,6 +260,9 @@ body {
   }
   .logo-esport{
     display: none;
+  }
+  .contact-timeline{
+    display: initial;
   }
 }
 
