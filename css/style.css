@@ -307,7 +307,7 @@ body {
   margin:2rem 0 0 0;
 }
 
-.btn-register-main {
+.btn-register-main{
   width: 280px;
   height: 60px;
   font-size: 15px;
@@ -318,12 +318,17 @@ body {
   background-color: transparent;
   border: none;
   border-radius: 10px;
-  border: 3px solid #fff;
+  border: 1px solid #fff;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
   margin-right: 15px;
   cursor: pointer;
   outline: none;
+}
+
+.btn-register-main a{
+  text-decoration: none;
+  color: #fff;
 }
 
 .btn-register-main:hover {
@@ -347,7 +352,7 @@ body {
   background-color: transparent;
   border: none;
   border-radius: 10px;
-  border: 3px solid #fff;
+  border: 1px solid #fff;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
   cursor: pointer;
