@@ -61,8 +61,9 @@
     align-items: center;
   }
   .timeline ul li div time {
+    color: #fff;
     position: absolute;
-    background: #f5af19;
+    background: #4F93D6;
     width: 200px;
     height: 30px;
     top: -20px;

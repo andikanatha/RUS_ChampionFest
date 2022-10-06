@@ -214,9 +214,12 @@ body {
 
 /* ------- Responsive Navbar ------ */
 /* ukuran tablet */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1068px) {
   #navbar-1 ul {
     width: 50%;
+  }
+  .logo-esport{
+    display: none;
   }
 }
 
@@ -238,7 +241,7 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: #576696;
-    box-shadow: -36px 10px 83px -12px rgba(0, 153, 255, 0.7);
+    box-shadow: -36px 10px 83px -12px #220C61;
     z-index: 1;
     transform: translateX(100%);
     transition: all 1s;
@@ -267,6 +270,31 @@ body {
 }
 
 /* -------End Navbar-------- */
+
+/* ------ Scrollbar ------ */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 50px #220C61; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #576696; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0087ca; 
+}
+
+/* ------ End Scrollbar ------ */
 
 /* intro */
 .body-main{
@@ -588,8 +616,7 @@ body {
 
 /* ------- Sponsor -------- */
 .container {
-  padding-top: 130px;
-  background: linear-gradient(180deg, #26204C 0%, #6578A3 53.74%, #151646 100%);
+  background: linear-gradient(180deg, #26224C 0%, #191545 68.28%, rgba(67, 64, 109, 0.88) 125.64%, #737294 133.15%);
 }
 
 /* .container h2 {
@@ -600,10 +627,17 @@ body {
 } */
 
 .sub-judul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-judul h1{
+  margin-top: 50px;
   color: #fff;
   text-align: center;
-  padding: 5px;
-  font-size: 42px;
+  font-size: 64px;
+  font-weight: 700;
 }
 
 .slick-slide {
@@ -686,12 +720,12 @@ body {
     font-size: 44px;
   } */
 
-  .sub-judul {
+  .sub-judul h1{
     color: #fff;
     text-align: center;
-    padding: 5px;
-    font-size: 22px;
+    font-size: 35px;
   }
+
 }
 
 @media only screen and (max-width: 500px) {
