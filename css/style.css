@@ -613,7 +613,148 @@ body {
 /*  */
 
 /* event */
+  .body-event{
+    padding-top: 200px;
+  }
+  .grand-event{
+    display: flex;
+    color: #fff;
+    margin: 40px 63px 0 63px;
+    background-color: #363F56;
+  }
+  
+  .img-event{
+    height: 493px;
+    width: 508px;
+  }
 
+  .content-event{
+    margin: 0 60px;
+  }
+
+  .tittle-event{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 21px;
+    padding-top: 70px;
+  }
+
+  .garis-event{
+    border: 3px #fff solid;
+    height: 0px;
+    width: 268px;
+  }
+
+  .text-event{
+    font-size: 21px;
+    font-weight: 400;
+    margin: 35px 0 60px 0;
+  }
+
+  .btn-event{
+    width: 165px;
+    height: 53px;
+    background-color: #9EC7EF;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 17px;
+    cursor: pointer;
+    border: none;
+  }
+
+  .btn-event:hover{
+    background-color: transparent;
+    color: #9EC7EF;
+    border: 1px solid #9EC7EF;
+    transition: 0.2s;
+  }
+
+  .card-event{
+    background: url(../img/dami.png);
+    width: 610px;
+    height: 344px;
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: Column-reverse;
+  }
+
+  .event-event{
+    display: flex;
+    margin-top: 4rem;
+    justify-content: center;
+  }
+
+  .txt-card-event{
+    color: #fff;
+    background: linear-gradient(92.6deg, rgba(217, 217, 217, 0.4) 23.05%, rgba(217, 217, 217, 0.31) 70.41%, rgba(217, 217, 217, 0) 100.51%);
+    box-shadow: 0px 4px 4px -1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+    padding-left: 25px;
+    border-radius: 0 0 50px 50px;
+  }
+
+  .tittle-card-ev{
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  .desc-card-ev{
+    font-size: 12px;
+    font-weight: 400;
+    padding: 5px 0 10px 0;
+  }
+
+  .btn-card-ev{
+    width: 123.5px;
+    height: 40px;
+    background-color: #9EC7EF;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 20px;
+  }
+
+  .btn-card-ev:hover{
+    background-color: transparent;
+    color: #262626;
+    border: 2px solid #303030;
+    transition: 0.2s;
+    font-weight: 800;
+  }
+
+  .garis-card-ev{
+    border: 3px solid #FFFFFF;
+    width: 580px;
+    height: 0px;
+    margin: 58px 10px;
+  }
+
+  .vertical-event{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .garis-vertical{
+    border: 3px solid #FFFFFF;
+    height: 324px;
+    width: 0px;
+    margin: 10px 0;
+  }
+
+  .img-vertical{
+    margin: 41px 36px;
+  }
+  
+  @media only screen and (min-width: 758px){
+   
+  }
+/*  */
 /* ------- Sponsor -------- */
 .container {
   background: linear-gradient(180deg, #26224C 0%, #191545 68.28%, rgba(67, 64, 109, 0.88) 125.64%, #737294 133.15%);
