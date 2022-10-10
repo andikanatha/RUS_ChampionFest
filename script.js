@@ -174,3 +174,43 @@ function cycleTestimonials(index) {
 cycleTestimonials(0)
 
 // END SLIDER ------
+
+// POPUP --------
+const modal = document.querySelector(".modal");
+const trigger = document.querySelector(".trigger");
+const closeButton = document.querySelector(".close-button");
+const navbar = document.querySelector(".navbar-1");
+
+function toggleModal() {
+    modal.classList.toggle("show-modal");
+    // // hide modal when click outside
+    // document.addEventListener('click', function(e){
+    //     if(e.target !== modal && e.target !== trigger){
+    //         modal.classList.remove('show-modal');
+    //     }
+    //   }
+    // );
+}
+
+function toggleModal2(){
+    modal2.classList.toggle("show-modal");
+}
+
+function toggleModal3(){
+    modal3.classList.toggle("show-modal");
+}
+
+function windowOnClick(event) {
+    if (event.target === modal) {
+        toggleModal();
+    } if (event.target === modal2){
+        toggleModal2();
+    } if (event.target == modal3){
+        toggleModal3();
+    }
+}
+
+
+trigger.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);

@@ -35,7 +35,7 @@ body {
   transition: 0.4s;
   position: fixed;
   width: 100%;
-  z-index: 1000;
+  z-index: 99;
 }
 
 .nav_link {
@@ -651,7 +651,7 @@ body {
     margin: 35px 0 60px 0;
   }
 
-  .btn-event{
+  .trigger{
     width: 165px;
     height: 53px;
     background-color: #9EC7EF;
@@ -663,12 +663,141 @@ body {
     border: none;
   }
 
-  .btn-event:hover{
+  .trigger:hover{
     background-color: transparent;
     color: #9EC7EF;
     border: 1px solid #9EC7EF;
     transition: 0.2s;
   }
+
+  /* popup css ----- */
+  .modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #363F56;
+    padding: 1rem 1.5rem;
+    width: 80%;
+    height: 80%;
+    border-radius: 0.5rem;
+    z-index: 99999;
+}
+
+.grand-event{
+    display: flex;
+    align-items: center;
+    margin: 10px 63px 63px;
+}
+
+.img-event{
+    height: 400px;
+    width: 558px;
+    border-radius: 12px;
+}
+
+.content-event{
+    margin: 0 60px;
+}
+
+.tittle-event{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 21px;
+    padding-top: 70px;
+}
+
+.garis-event{
+    border-bottom: 3px #fff solid;
+    width: 268px;
+}
+
+.text-event{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 35px 0 60px 0;
+  }
+/* close button 1 */
+.close-button {
+    float: right;
+    width: 2.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+}
+
+.close-button i {
+    font-size: 2rem;
+}
+
+.close-button i:hover{
+    color: #8bc1ff;
+}
+
+/* end close button 1 */
+
+/* close button 2 */
+.close-button2 {
+    float: right;
+    width: 2.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.close-button2 i {
+    font-size: 2rem;
+}
+
+.close-button2 i:hover{
+    color: rgb(63, 102, 188);
+}
+
+/* end close button 2 */
+
+/* close button 3 */
+.close-button3 {
+    float: right;
+    width: 2.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.close-button3 i {
+    font-size: 2rem;
+}
+
+.close-button3 i:hover{
+    color: rgb(63, 102, 188);
+}
+/* end close button3 */
+
+.show-modal {
+    opacity: 1;
+    z-index: 99999;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+
 
   .card-event{
     background: url(../img/dami.png);
