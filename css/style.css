@@ -621,6 +621,7 @@ body {
     color: #fff;
     margin: 40px 63px 0 63px;
     background-color: #363F56;
+    border-radius: 15px;
   }
   
   .img-event{
@@ -640,7 +641,7 @@ body {
   }
 
   .garis-event{
-    border: 3px #fff solid;
+    border-bottom: 1px #fff solid;
     height: 0px;
     width: 268px;
   }
@@ -654,9 +655,10 @@ body {
   .trigger{
     width: 165px;
     height: 53px;
-    background-color: #9EC7EF;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     border-radius: 10px;
+    margin-bottom: 30px;
     font-weight: 500;
     font-size: 17px;
     cursor: pointer;
@@ -664,9 +666,8 @@ body {
   }
 
   .trigger:hover{
-    background-color: transparent;
-    color: #9EC7EF;
-    border: 1px solid #9EC7EF;
+    background-color: #220C61;
+    color: #fff;
     transition: 0.2s;
   }
 
@@ -684,6 +685,58 @@ body {
     transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 }
 
+  .modal2{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  }
+
+  .modal3{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  }
+
+  .modal4{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  }
+
+  .modal5{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  }
+
 .modal-content {
     position: relative;
     top: 50%;
@@ -692,7 +745,7 @@ body {
     background-color: #363F56;
     padding: 1rem 1.5rem;
     width: 80%;
-    height: 80%;
+    height: 70%;
     border-radius: 0.5rem;
     z-index: 99999;
 }
@@ -706,7 +759,6 @@ body {
 .img-event{
     height: 400px;
     width: 558px;
-    border-radius: 12px;
 }
 
 .content-event{
@@ -722,7 +774,7 @@ body {
 }
 
 .garis-event{
-    border-bottom: 3px #fff solid;
+    border-bottom: 1px #fff solid;
     width: 268px;
 }
 
@@ -759,6 +811,7 @@ body {
     line-height: 1.5rem;
     text-align: center;
     cursor: pointer;
+    color: #fff;
 }
 
 .close-button2 i {
@@ -766,7 +819,7 @@ body {
 }
 
 .close-button2 i:hover{
-    color: rgb(63, 102, 188);
+    color: #8bc1ff;
 }
 
 /* end close button 2 */
@@ -778,6 +831,7 @@ body {
     line-height: 1.5rem;
     text-align: center;
     cursor: pointer;
+    color: #fff;
 }
 
 .close-button3 i {
@@ -785,10 +839,49 @@ body {
 }
 
 .close-button3 i:hover{
-    color: rgb(63, 102, 188);
+    color: #8bc1ff;
 }
 /* end close button3 */
 
+/* close button 4 */
+.close-button4 {
+  float: right;
+  width: 2.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+}
+
+.close-button4 i {
+  font-size: 2rem;
+}
+
+.close-button4 i:hover{
+  color: #8bc1ff;
+}
+
+/* end close button4 */
+
+/* close button 5 */
+.close-button5 {
+  float: right;
+  width: 2.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+}
+
+.close-button5 i {
+  font-size: 2rem;
+}
+
+.close-button5 i:hover{
+  color: #8bc1ff;
+}
+
+/* end close button5 */
 .show-modal {
     opacity: 1;
     z-index: 99999;
@@ -803,7 +896,7 @@ body {
     background: url(../img/dami.png);
     width: 610px;
     height: 344px;
-    border-radius: 50px;
+    border-radius: 15px;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -819,11 +912,11 @@ body {
 
   .txt-card-event{
     color: #fff;
-    background: linear-gradient(92.6deg, rgba(217, 217, 217, 0.4) 23.05%, rgba(217, 217, 217, 0.31) 70.41%, rgba(217, 217, 217, 0) 100.51%);
+    background: linear-gradient(92.87deg, rgba(27, 32, 49, 0.6) 23.09%, rgba(27, 32, 49, 0.4) 73.42%, #1B2031 105.42%);
     box-shadow: 0px 4px 4px -1px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(2px);
     padding-left: 25px;
-    border-radius: 0 0 50px 50px;
+    border-radius: 0 0 15px 15px;
   }
 
   .tittle-card-ev{
@@ -837,11 +930,11 @@ body {
     padding: 5px 0 10px 0;
   }
 
-  .btn-card-ev{
+  .trigger5{
     width: 123.5px;
     height: 40px;
-    background-color: #9EC7EF;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     border-radius: 10px;
     font-weight: 500;
     font-size: 14px;
@@ -850,12 +943,70 @@ body {
     margin-bottom: 20px;
   }
 
-  .btn-card-ev:hover{
-    background-color: transparent;
-    color: #262626;
-    border: 2px solid #303030;
+  .trigger5:hover{
+    background-color: #220C61;
+    color: #fff;
     transition: 0.2s;
-    font-weight: 800;
+    font-weight: 500;
+  }
+
+  .trigger2{
+    width: 123.5px;
+    height: 40px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 20px;
+  }
+  .trigger2:hover{
+    background-color: #220C61;
+    color: #fff;
+    transition: 0.2s;
+    font-weight: 500;
+  }
+
+  .trigger3{
+    width: 123.5px;
+    height: 40px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 20px;
+  }
+
+  .trigger3:hover{
+    background-color: #220C61;
+    color: #fff;
+    transition: 0.2s;
+    font-weight: 500;
+  }
+
+  .trigger4{
+    width: 123.5px;
+    height: 40px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 20px;
+  }
+
+  .trigger4:hover{
+    background-color: #220C61;
+    color: #fff;
+    transition: 0.2s;
+    font-weight: 500;
   }
 
   .garis-card-ev{
@@ -926,6 +1077,22 @@ body {
       height: 30px;
       font-size: 12px;
     }
+    .modal-content{
+      width: 80%;
+      height: 80%;
+    }
+
+    .grand-event img{
+      height: 300px;
+      width: 400px;
+    }
+    .grand-event h1{
+      font-size: 24px;
+    }
+    .grand-event p{
+      font-size: 12px;
+    }
+
   }
 
   @media only screen and (max-width: 970px) {
@@ -969,6 +1136,20 @@ body {
     .img-vertical{
       margin: 18px 18px;
     }
+    .modal-content{
+      width: 90%;
+      height: 30%;
+    }
+    .grand-event img{
+      height: 200px;
+      width: 280px;
+    }
+    .grand-event h1{
+      font-size: 18px;
+    }
+    .grand-event p{
+      font-size: 10px;
+    }
   }
 
   @media only screen and (max-width: 685px){
@@ -1000,6 +1181,20 @@ body {
 
     .txt-card-event{
       padding-left: 5px;
+    }
+    .modal-content{
+      width: 90%;
+      height: 50%;
+    }
+    .grand-event img{
+      height: 150px;
+      width: 150px;
+    }
+    .grand-event h1{
+      font-size: 16px;
+    }
+    .grand-event p{
+      font-size: 10px;
     }
   }
 
@@ -1074,6 +1269,15 @@ body {
       transition: 0.2s;
       font-weight: 800;
     }
+    .modal-content{
+      width: 90%;
+      height: 78%;
+    }
+    .grand-event img{
+      height: 150px;
+      width: 200px;
+    }
+
   }
 
   @media only screen and (max-width: 427px){
@@ -1098,6 +1302,10 @@ body {
       height: 25px;
       font-size: 12px;
       margin-left: 5px;
+    }
+    .modal-content{
+      width: 80%;
+      height: 80%;
     }
   }
 
@@ -1147,7 +1355,7 @@ body {
     }
 
     .garis-event{
-      border: 2px #fff solid;
+      border-bottom: 1px #fff solid;
       height: 0px;
       width: 268px;
     }
@@ -1192,7 +1400,7 @@ body {
     }
 
     .garis-event{
-      border: 2px #fff solid;
+      border-bottom: 1px #fff solid;
       height: 0px;
       width: 268px;
     }
@@ -1234,7 +1442,7 @@ body {
     }
 
     .garis-event{
-      border: 2px #fff solid;
+      border-bottom: 1px #fff solid;
       height: 0px;
       width: 268px;
     }
@@ -1276,7 +1484,7 @@ body {
     }
 
     .garis-event{
-      border: 2px #fff solid;
+      border-bottom: 1px #fff solid;
       height: 0px;
       width: 198px;
     }
@@ -1324,7 +1532,7 @@ body {
     }
 
     .garis-event{
-      border: 2px #fff solid;
+      border-bottom: 1px #fff solid;
       height: 0px;
       width: 168px;
     }

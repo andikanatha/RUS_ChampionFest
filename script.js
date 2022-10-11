@@ -177,19 +177,24 @@ cycleTestimonials(0)
 
 // POPUP --------
 const modal = document.querySelector(".modal");
+const modal2  = document.querySelector(".modal2");
+const modal3  = document.querySelector(".modal3");
+const modal4  = document.querySelector(".modal4");
+const modal5  = document.querySelector(".modal5");
 const trigger = document.querySelector(".trigger");
+const trigger2 = document.querySelector(".trigger2");
+const trigger3 = document.querySelector(".trigger3");
+const trigger4 = document.querySelector(".trigger4");
+const trigger5 = document.querySelector(".trigger5");
 const closeButton = document.querySelector(".close-button");
+const closeButton2 = document.querySelector(".close-button2");
+const closeButton3 = document.querySelector(".close-button3");
+const closeButton4 = document.querySelector(".close-button4");
+const closeButton5 = document.querySelector(".close-button5");
 const navbar = document.querySelector(".navbar-1");
 
 function toggleModal() {
     modal.classList.toggle("show-modal");
-    // // hide modal when click outside
-    // document.addEventListener('click', function(e){
-    //     if(e.target !== modal && e.target !== trigger){
-    //         modal.classList.remove('show-modal');
-    //     }
-    //   }
-    // );
 }
 
 function toggleModal2(){
@@ -200,17 +205,37 @@ function toggleModal3(){
     modal3.classList.toggle("show-modal");
 }
 
+function toggleModal4(){
+    modal4.classList.toggle("show-modal");
+}
+
+function toggleModal5(){
+    modal5.classList.toggle("show-modal");
+}
+
 function windowOnClick(event) {
     if (event.target === modal) {
         toggleModal();
     } if (event.target === modal2){
         toggleModal2();
-    } if (event.target == modal3){
+    }if (event.target === modal3){
         toggleModal3();
+    }if (event.target === modal4){
+        toggleModal4();
+    }if (event.target === modal5){
+        toggleModal5();
     }
 }
 
 
 trigger.addEventListener("click", toggleModal);
+trigger2.addEventListener("click", toggleModal2);
+trigger3.addEventListener("click", toggleModal3);
+trigger4.addEventListener("click", toggleModal4);
+trigger5.addEventListener("click", toggleModal5);
 closeButton.addEventListener("click", toggleModal);
+closeButton2.addEventListener("click", toggleModal2);
+closeButton3.addEventListener("click", toggleModal3);
+closeButton4.addEventListener("click", toggleModal4);
+closeButton5.addEventListener("click", toggleModal5);
 window.addEventListener("click", windowOnClick);
