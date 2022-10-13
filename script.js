@@ -116,7 +116,6 @@ function scrollFunction() {
     matchMedia("(max-width: 576px)").matches ? document.getElementById("navbar").removeAttribute("style") : null;
     matchMedia("(max-width: 720px)").matches ? document.getElementById("navbar").removeAttribute("style") : null;
     matchMedia("(max-width: 800px)").matches ? document.getElementById("navbar").removeAttribute("style") : null;
-    matchMedia("(max-width: 1400px)").matches ? document.getElementById("navbar").removeAttribute("style") : null;
   };
 
 // END NAVBAR MELAYANG -----
