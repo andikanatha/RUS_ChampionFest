@@ -267,6 +267,10 @@ body {
   .contact-timeline{
     display: initial;
   }
+
+  #navbar{
+    padding: 10px 35px;
+  }
 }
 
 /* -------End Navbar-------- */
