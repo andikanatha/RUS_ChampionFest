@@ -707,6 +707,227 @@ body {
 
 /*  */
 
+/* Popup */
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal2 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal3 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal4 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal5 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #363F56;
+  padding: 1rem 1.5rem;
+  width: 80%;
+  height: 80%;
+  border-radius: 0.5rem;
+}
+
+.isi-modal{
+  display: flex;
+  align-items: center;
+  margin: 0 63px 63px;
+}
+
+.img-modal img{
+  height: 400px;
+  width: 558px;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+
+.content-modal{
+  margin: 0 60px;
+}
+
+.content-modal h1{
+  font-size: 30px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 21px;
+  padding-top: 70px;
+}
+
+.garis-modal{
+  border-bottom: 3px #fff solid;
+  width: 268px;
+}
+
+.text-modal p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400; 
+  margin: 20px 0;
+}
+/* close button 1 */
+.close-button {
+  float: right;
+  width: 2.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+}
+
+.close-button i {
+  font-size: 2rem;
+}
+
+.close-button i:hover{
+  color: #8bc1ff;
+}
+
+/* end close button 1 */
+
+/* close button 2 */
+.close-button2 {
+  float: right;
+  width: 2.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+}
+
+.close-button2 i {
+  font-size: 2rem;
+}
+
+.close-button2 i:hover{
+  color: #8bc1ff;
+}
+
+/* end close button 2 */
+
+/* close button 3 */
+.close-button3 {
+  float: right;
+  width: 2.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+}
+
+.close-button3 i {
+  font-size: 2rem;
+}
+
+.close-button3 i:hover{
+  color: #8bc1ff;
+}
+
+/* end close button 3 */
+
+/* close button 4 */
+.close-button4 {
+  float: right;
+  width: 2.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+}
+
+.close-button4 i {
+  font-size: 2rem;
+}
+
+.close-button4 i:hover{
+  color: #8bc1ff;
+}
+
+/* end close button 4 */
+
+/* close button 5 */
+.close-button5 {
+  float: right;
+  width: 2.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+}
+
+.close-button5 i {
+  font-size: 2rem;
+}
+
+.close-button5 i:hover{
+  color: #8bc1ff;
+}
+
+/* end close button 5 */
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  z-index: 999;
+}
+/* end popup */
+
+
+
 	/* event */
   .body-event {
     padding-top: 200px;
@@ -736,7 +957,7 @@ body {
   }
   
   .garis-event {
-    border: 3px #fff solid;
+    border-bottom: 3px #fff solid;
     height: 0px;
     width: 268px;
   }
@@ -746,8 +967,10 @@ body {
     font-weight: 400;
     margin: 35px 0 60px 0;
   }
+
+  /* button trigger popup */
   
-  .btn-event {
+  .trigger {
     width: 165px;
     height: 53px;
     background-color: #9EC7EF;
@@ -759,12 +982,92 @@ body {
     border: none;
   }
   
-  .btn-event:hover {
+  .trigger:hover {
     background-color: transparent;
     color: #ffffff;
       border: 2px solid #ffffff;
     transition: 0.2s;
   }
+
+  .trigger2 {
+    width: 123.5px;
+    height: 40px;
+    background-color: #9EC7EF;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 20px;
+  }
+  
+  .trigger2:hover {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    transition: 0.2s;
+  }
+  .trigger3 {
+    width: 123.5px;
+    height: 40px;
+    background-color: #9EC7EF;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 20px;
+  }
+  
+  .trigger3:hover {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    transition: 0.2s;
+  }
+  .trigger4 {
+    width: 123.5px;
+    height: 40px;
+    background-color: #9EC7EF;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 20px;
+  }
+  
+  .trigger4:hover {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    transition: 0.2s;
+  }
+
+  .trigger5 {
+    width: 123.5px;
+    height: 40px;
+    background-color: #9EC7EF;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 20px;
+  }
+  
+  .trigger5:hover {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    transition: 0.2s;
+  }
+
+  /* button trigger popup */
   
   .card-event {
     background: url(../img/dami.png);
@@ -895,6 +1198,21 @@ body {
       height: 30px;
       font-size: 12px;
     }
+    .modal-content{
+      width: 80%;
+      height: 75%;
+    }
+    .img-modal{
+      width: 87%;
+      margin-top: 50px;
+    } 
+    .content-modal h1{
+      font-size: 30px;
+      margin-top: 10px;
+    }
+    .text-modal {
+      font-size: 11px;
+    }
   }
   
   @media only screen and (max-width: 970px) {
@@ -943,6 +1261,39 @@ body {
     .img-vertical {
       margin: 18px 18px;
     }
+    .modal-content{
+      width: 90%;
+      height: 80%;
+    } 
+    .isi-modal{
+      flex-direction: column;
+    }
+    .img-modal img{
+      width: 100%;
+      margin-top: 1px;
+    }
+    .content-modal h1{
+      font-size: 35px;
+      padding-top: 2px;
+    }
+  }
+
+  @media only screen and (max-width: 786px) {
+    .modal-content{
+      width: 90%;
+      height: 94%;
+    }
+    .img-modal img{
+      width: 100%;
+      margin-top: 1px;
+    }
+    .content-modal h1{
+      font-size: 35px;
+      padding-top: 2px;
+    }
+    .text-modal p{
+      font-size: 14px;
+    }
   }
   
   @media only screen and (max-width: 685px) {
@@ -974,6 +1325,47 @@ body {
   
     .txt-card-event {
       padding-left: 5px;
+    }
+    .modal-content{
+      width: 90%;
+      height: 90%;
+    }
+    .isi-modal{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .img-modal{
+      width: 100%;
+      height: 50%;
+      margin: 0;
+      margin-top: 250px;
+      margin-right: 120px;
+    }
+    .img-modal img{
+      width: 100%;
+      height: 80%;
+    }
+    .content-modal{
+      margin: 0;
+      margin-top: 2px;
+      margin-right: 120px;
+    }
+
+    .content-modal h1{
+      font-size: 26px;
+      margin: 0;
+      padding-top: 2px;
+    }
+    .text-modal{
+      height: 50%;
+      margin-bottom: 280px;
+    }
+    .text-modal p{
+      font-size: 12px;
     }
   }
   

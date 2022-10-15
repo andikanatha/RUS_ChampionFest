@@ -108,7 +108,9 @@ function scrollFunction() {
       document.getElementById("navbar").style.borderRadius = "40px";
       document.getElementById("navbar").style.width = "90%";
       document.getElementById("navbar").style.margin= "25px 71px 0 71px";
-    document.getElementById("navbar").style.backgroundColor = "#220C61";
+      document.getElementById("navbar").style.backgroundColor = "#220C61";
+      matchMedia("(max-width: 1280px)").matches ? document.getElementById("navbar").style.margin = "30px 0 0 0" : null;
+      matchMedia("(max-width: 1280px)").matches ? document.getElementById("navbar").style.width = "100%" : null;
     } else {  
       document.getElementById("navbar").removeAttribute("style");
       document.getElementById("navbar").style.margin = "0 0 0 0";
@@ -116,6 +118,8 @@ function scrollFunction() {
     matchMedia("(max-width: 576px)").matches ? document.getElementById("navbar").removeAttribute("style") : null;
     matchMedia("(max-width: 720px)").matches ? document.getElementById("navbar").removeAttribute("style") : null;
     matchMedia("(max-width: 800px)").matches ? document.getElementById("navbar").removeAttribute("style") : null;
+    matchMedia("(max-width: 1092px)").matches ? document.getElementById("navbar").removeAttribute("style") : null;
+    matchMedia("(max-width: 1440px)").matches ? document.getElementById("navbar").style.padding = "0 24px 0 24px" : null;
   };
 
 // END NAVBAR MELAYANG -----
@@ -176,10 +180,10 @@ cycleTestimonials(0)
 
 // POPUP --------
 const modal = document.querySelector(".modal");
-const modal2  = document.querySelector(".modal2");
-const modal3  = document.querySelector(".modal3");
-const modal4  = document.querySelector(".modal4");
-const modal5  = document.querySelector(".modal5");
+const modal2 = document.querySelector(".modal2");
+const modal3 = document.querySelector(".modal3");
+const modal4 = document.querySelector(".modal4");
+const modal5 = document.querySelector(".modal5");
 const trigger = document.querySelector(".trigger");
 const trigger2 = document.querySelector(".trigger2");
 const trigger3 = document.querySelector(".trigger3");
@@ -217,11 +221,11 @@ function windowOnClick(event) {
         toggleModal();
     } if (event.target === modal2){
         toggleModal2();
-    }if (event.target === modal3){
+    } if (event.target === modal3){
         toggleModal3();
-    }if (event.target === modal4){
+    } if (event.target === modal4){
         toggleModal4();
-    }if (event.target === modal5){
+    } if (event.target === modal5){
         toggleModal5();
     }
 }
