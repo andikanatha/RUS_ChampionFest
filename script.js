@@ -184,11 +184,11 @@ const modal2 = document.querySelector(".modal2");
 const modal3 = document.querySelector(".modal3");
 const modal4 = document.querySelector(".modal4");
 const modal5 = document.querySelector(".modal5");
-const trigger = document.querySelector(".trigger");
-const trigger2 = document.querySelector(".trigger2");
-const trigger3 = document.querySelector(".trigger3");
-const trigger4 = document.querySelector(".trigger4");
-const trigger5 = document.querySelector(".trigger5");
+const btnclose1 = document.querySelector(".btn-close");
+const btnclose2 = document.querySelector(".btn-close2");
+const btnclose3 = document.querySelector(".btn-close3");
+const btnclose4 = document.querySelector(".btn-close4");
+const btnclose5 = document.querySelector(".btn-close5");
 const closeButton = document.querySelector(".close-button");
 const closeButton2 = document.querySelector(".close-button2");
 const closeButton3 = document.querySelector(".close-button3");
@@ -231,11 +231,11 @@ function windowOnClick(event) {
 }
 
 
-trigger.addEventListener("click", toggleModal);
-trigger2.addEventListener("click", toggleModal2);
-trigger3.addEventListener("click", toggleModal3);
-trigger4.addEventListener("click", toggleModal4);
-trigger5.addEventListener("click", toggleModal5);
+btnclose1.addEventListener("click", toggleModal);
+btnclose2.addEventListener("click", toggleModal2);
+btnclose3.addEventListener("click", toggleModal3);
+btnclose4.addEventListener("click", toggleModal4);
+btnclose5.addEventListener("click", toggleModal5);
 closeButton.addEventListener("click", toggleModal);
 closeButton2.addEventListener("click", toggleModal2);
 closeButton3.addEventListener("click", toggleModal3);

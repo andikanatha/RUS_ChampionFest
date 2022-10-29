@@ -776,35 +776,34 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #363F56;
-  padding: 1rem 1.5rem;
-  width: 80%;
-  height: 80%;
+  padding: 1rem 0.5rem 1rem 2.5rem;
+  width: 90%;
+  height: auto;
   border-radius: 0.5rem;
 }
 
 .isi-modal{
   display: flex;
   align-items: center;
-  margin: 0 63px 63px;
+  margin: 63px 63px;
 }
 
 .img-modal img{
   height: 400px;
-  width: 558px;
+  width: 508px;
   border-radius: 20px;
-  margin-top: 50px;
 }
 
 .content-modal{
-  margin: 0 60px;
+  margin: 0 20px 0 60px;
 }
 
 .content-modal h1{
   font-size: 30px;
   color: #fff;
   font-weight: 700;
-  margin-bottom: 21px;
-  padding-top: 70px;
+  margin-bottom: 11px;
+  /* padding-top: 70px; */
 }
 
 .garis-modal{
@@ -992,7 +991,7 @@ body {
   .trigger2 {
     width: 123.5px;
     height: 40px;
-    background-color: #9EC7EF;
+    background-color: #5d9fe0;
     color: #fff;
     border-radius: 10px;
     font-weight: 500;
@@ -1003,64 +1002,6 @@ body {
   }
   
   .trigger2:hover {
-    background-color: transparent;
-    color: #ffffff;
-    border: 2px solid #ffffff;
-    transition: 0.2s;
-  }
-  .trigger3 {
-    width: 123.5px;
-    height: 40px;
-    background-color: #9EC7EF;
-    color: #fff;
-    border-radius: 10px;
-    font-weight: 500;
-    font-size: 14px;
-    cursor: pointer;
-    border: none;
-    margin-bottom: 20px;
-  }
-  
-  .trigger3:hover {
-    background-color: transparent;
-    color: #ffffff;
-    border: 2px solid #ffffff;
-    transition: 0.2s;
-  }
-  .trigger4 {
-    width: 123.5px;
-    height: 40px;
-    background-color: #9EC7EF;
-    color: #fff;
-    border-radius: 10px;
-    font-weight: 500;
-    font-size: 14px;
-    cursor: pointer;
-    border: none;
-    margin-bottom: 20px;
-  }
-  
-  .trigger4:hover {
-    background-color: transparent;
-    color: #ffffff;
-    border: 2px solid #ffffff;
-    transition: 0.2s;
-  }
-
-  .trigger5 {
-    width: 123.5px;
-    height: 40px;
-    background-color: #9EC7EF;
-    color: #fff;
-    border-radius: 10px;
-    font-weight: 500;
-    font-size: 14px;
-    cursor: pointer;
-    border: none;
-    margin-bottom: 20px;
-  }
-  
-  .trigger5:hover {
     background-color: transparent;
     color: #ffffff;
     border: 2px solid #ffffff;
@@ -1080,6 +1021,12 @@ body {
     flex-direction: Column-reverse;
   }
   
+  .bg-kiriatas{
+    background: url(../img/TMCARD.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .event-event {
     display: flex;
     margin-top: 4rem;
@@ -1105,27 +1052,6 @@ body {
     font-size: 12px;
     font-weight: 400;
     padding: 5px 0 10px 0;
-  }
-  
-  .btn-card-ev {
-    width: 123.5px;
-    height: 40px;
-    background-color: #9EC7EF;
-    color: #fff;
-    border-radius: 10px;
-    font-weight: 500;
-    font-size: 14px;
-    cursor: pointer;
-    border: none;
-    margin-bottom: 20px;
-  }
-  
-  .btn-card-ev:hover {
-    background-color: transparent;
-      color: #ffffff;
-      border: 2px solid #ffffff;
-    transition: 0.2s;
-    font-weight: 800;
   }
   
   .garis-card-ev {
@@ -1192,26 +1118,37 @@ body {
     .desc-card-ev {
       font-size: 10px;
     }
-  
-    .btn-card-ev {
+    
+    .isi-modal{
+      margin: 53px 13px;
+    }
+
+    .trigger2 {
       width: 100px;
       height: 30px;
       font-size: 12px;
     }
     .modal-content{
-      width: 80%;
-      height: 75%;
+      width: 90%;
+      height: auto;
     }
-    .img-modal{
+
+    .img-modal img{
+      height: 300px;
+      width: 358px;
+      border-radius: 20px;
+    }
+    /* .img-modal{
       width: 87%;
       margin-top: 50px;
-    } 
+    }  */
     .content-modal h1{
       font-size: 30px;
       margin-top: 10px;
     }
+    
     .text-modal {
-      font-size: 11px;
+      font-size: 18px;
     }
   }
   
@@ -1251,7 +1188,7 @@ body {
       padding: 1px 0 5px 0;
     }
   
-    .btn-card-ev {
+    .trigger2 {
       width: 80px;
       height: 25px;
       font-size: 10px;
@@ -1263,14 +1200,19 @@ body {
     }
     .modal-content{
       width: 90%;
-      height: 80%;
+      height: auto;
+      padding: 1rem 0.5rem 1rem 0.5rem;
     } 
     .isi-modal{
       flex-direction: column;
+      margin: 43px 13px;
     }
     .img-modal img{
-      width: 100%;
-      margin-top: 1px;
+      height: 250px;
+      width: 488px;
+    }
+    .content-modal{
+      margin: 0 40px 0 40px;
     }
     .content-modal h1{
       font-size: 35px;
@@ -1279,24 +1221,18 @@ body {
   }
 
   @media only screen and (max-width: 786px) {
-    .modal-content{
-      width: 90%;
-      height: 94%;
-    }
     .img-modal img{
-      width: 100%;
+      height: 250px;
       margin-top: 1px;
-    }
-    .content-modal h1{
-      font-size: 35px;
-      padding-top: 2px;
-    }
-    .text-modal p{
-      font-size: 14px;
     }
   }
   
   @media only screen and (max-width: 685px) {
+    .content-modal h1{
+      font-size: 25px;
+      padding-top: 2px;
+    }
+
     .card-event {
       width: 240px;
       height: 200px;
@@ -1327,49 +1263,55 @@ body {
       padding-left: 5px;
     }
     .modal-content{
-      width: 90%;
-      height: 90%;
+      /* width: 90%;
+      height: 90%; */
     }
     .isi-modal{
-      width: 100%;
+      /* width: 100%;
       height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
+      align-items: center; */
     }
     .img-modal{
-      width: 100%;
+      /* width: 100%;
       height: 50%;
       margin: 0;
       margin-top: 250px;
-      margin-right: 120px;
+      margin-right: 120px; */
     }
     .img-modal img{
-      width: 100%;
-      height: 80%;
+      height: 230px;
+      width: 388px;
     }
     .content-modal{
-      margin: 0;
+      /* margin: 0;
       margin-top: 2px;
-      margin-right: 120px;
+      margin-right: 120px; */
     }
 
     .content-modal h1{
-      font-size: 26px;
+      /* font-size: 26px;
       margin: 0;
-      padding-top: 2px;
+      padding-top: 2px; */
     }
     .text-modal{
-      height: 50%;
-      margin-bottom: 280px;
+      /* height: 50%;
+      margin-bottom: 280px; */
     }
     .text-modal p{
-      font-size: 12px;
+      font-size: 16px;
+      margin: 10px 0;
     }
   }
   
   @media only screen and (max-width: 580px) {
+    .content-modal h1{
+      font-size: 20px;
+      padding-top: 2px;
+    }
+
     .garis-event {
       border: none;
       height: 0;
@@ -1406,7 +1348,7 @@ body {
       box-shadow: 0px 4px 4px -1px rgba(0, 0, 0, 0.25);
       backdrop-filter: blur(2px);
       padding: 0 10px 0 20px;
-      border-radius: 0 0 35px 35px;
+      border-radius: 0 0 30px 30px;
     }
   
     .tittle-card-ev {
@@ -1420,7 +1362,7 @@ body {
       padding: 5px 0 10px 0;
     }
   
-    .btn-card-ev {
+    .trigger2 {
       width: 123.5px;
       height: 30px;
       background-color: #9EC7EF;
@@ -1433,12 +1375,17 @@ body {
       margin-bottom: 15px;
     }
   
-    .btn-card-ev:hover {
+    .trigger2:hover {
       background-color: transparent;
       color: #ffffff;
       border: 2px solid #ffffff;
       transition: 0.2s;
       font-weight: 800;
+    }
+
+    .img-modal img{
+      height: 180px;
+      width: 338px;
     }
   }
   
@@ -1459,11 +1406,16 @@ body {
       margin-left: 5px;
     }
   
-    .btn-card-ev {
+    .trigger2 {
       width: 100px;
       height: 25px;
       font-size: 12px;
       margin-left: 5px;
+    }
+
+    .img-modal img{
+      height: 165px;
+      width: 278px;
     }
   }
   
@@ -1484,11 +1436,16 @@ body {
       margin-left: 5px;
     }
   
-    .btn-card-ev {
+    .trigger2 {
       width: 80px;
       height: 20px;
       font-size: 10px;
       margin-left: 5px;
+    }
+
+    .img-modal img{
+      height: 145px;
+      width: 248px;
     }
   }
   
@@ -1525,7 +1482,7 @@ body {
       margin: 35px 0 20px 0;
     }
   
-    .btn-event {
+    .trigger {
       width: 145px;
       height: 53px;
       background-color: #9EC7EF;
@@ -1571,7 +1528,7 @@ body {
       margin: 25px 0 20px 0;
     }
   
-    .btn-event {
+    .trigger {
       width: 135px;
       height: 43px;
       background-color: #9EC7EF;
@@ -1613,7 +1570,7 @@ body {
       margin: 18px 0 15px 0;
     }
   
-    .btn-event {
+    .trigger {
       width: 115px;
       height: 35px;
       background-color: #9EC7EF;
@@ -1655,7 +1612,7 @@ body {
       margin: 15px 0 8px 0;
     }
   
-    .btn-event {
+    .trigger {
       width: 105px;
       height: 30px;
       background-color: #9EC7EF;
@@ -1703,7 +1660,7 @@ body {
       margin: 10px 0 5px 0;
     }
   
-    .btn-event {
+    .trigger {
       width: 95px;
       height: 25px;
       background-color: #9EC7EF;
@@ -1747,7 +1704,7 @@ body {
       font-size: 16px;
     }
   
-    .btn-event {
+    .trigger {
       margin-top: 7px;
       margin-bottom: 27px;
       font-size: 14px;
